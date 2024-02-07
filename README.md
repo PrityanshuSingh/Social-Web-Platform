@@ -2,7 +2,7 @@
 It is a dynamic and interconnected space designed to enhance your online presence in college. With a focus on thriving, connecting, and flourishing, this platform aims to provide a seamless experience for users to navigate and engage across various social media channels.
 
 ## Features
-Upcoming...
+(Currently in Designing Phase) Upcoming...
 
 ## Getting Started
 1. **Installation:**
