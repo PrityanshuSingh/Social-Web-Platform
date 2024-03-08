@@ -1,0 +1,102 @@
+@import "../../../global.css";
+
+
+.feedFrameChild {
+    width: 48.438rem;
+    height: 55.125rem;
+    position: relative;
+    border-radius: var(--br-smi);
+    object-fit: contain;
+    display: none;
+    max-width: 100%;
+  }
+  .feed {
+    height: 2.375rem;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .scrollbarIcon {
+    height: 5.375rem;
+    width: 0.75rem;
+    position: relative;
+    border-radius: var(--br-smi);
+    z-index: 1;
+  }
+  .unitPostExample1Parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0rem 0.75rem;
+    max-width: 100%;
+  }
+  .frameParent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0rem var(--padding-12xs) 0rem 0rem;
+    box-sizing: border-box;
+    gap: 1.125rem 0rem;
+    max-width: 100%;
+    flex-shrink: 0;
+    font-size: var(--font-size-5xl);
+  }
+  .feedFrame {
+    flex: 1;
+    border-radius: var(--br-smi);
+    background-color: var(--color-gray-100);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-xl) var(--padding-smi) var(--padding-19xl)
+      var(--padding-lg);
+    box-sizing: border-box;
+    gap: var(--gap-4xl);
+    min-width: 31.5rem;
+    max-width: 100%;
+    flex-shrink: 0;
+    z-index: 1;
+    text-align: left;
+    font-size: var(--font-size-13xl);
+    color: var(--color-white);
+    font-family: var(--font-poppins);
+  }
+  
+  @media screen and (max-width: 900px) {
+    .feed {
+      font-size: var(--font-size-7xl);
+    }
+  
+    .feedFrame {
+      padding-bottom: var(--padding-6xl);
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 675px) {
+    .unitPostExample1Parent {
+      flex-wrap: wrap;
+    }
+  
+    .feedFrame {
+      min-width: 100%;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .feed {
+      font-size: var(--font-size-lgi);
+    }
+  
+    .feedFrame {
+      padding-bottom: var(--padding-xl);
+      box-sizing: border-box;
+    }
+  }
+  

@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.frame {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+  }
+  .logo {
+    align-self: stretch;
+    height: 5.625rem;
+    z-index: 2;
+  }
+  .feed,
+  .rectangle {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .rectangle {
+    height: 55.438rem;
+    width: 18.313rem;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.375rem 0;
+  }
+  .feed {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #020c13;
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 7.5rem var(--padding-mini) var(--padding-lgi) 0.75rem;
+    box-sizing: border-box;
+    gap: 0 0.875rem;
+    letter-spacing: normal;
+  }
+  
