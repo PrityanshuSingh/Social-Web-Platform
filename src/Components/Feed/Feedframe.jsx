@@ -19,7 +19,6 @@ function Feedframe() {
         </div>
       </div>
     );
-  };
-  
+  }  
   export default Feedframe;
   

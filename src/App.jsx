@@ -1,13 +1,12 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router} from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
-import Feed from './Pages/Feed'; 
+import MainFrame from './Pages/MainFrame'; 
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Feed />} />
+        <Route path="/" element={<MainFrame />} />
         {/* Other routes */}
       </Routes>
     </Router>
@@ -15,3 +14,4 @@ function App() {
 }
 
 export default App;
+

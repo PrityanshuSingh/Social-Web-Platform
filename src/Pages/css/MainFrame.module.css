@@ -1,0 +1,27 @@
+body {
+  margin: 3vh;
+  padding: 0;
+  background-color: #020c13;
+  
+}
+
+.frame {
+  width: 100%;
+  height: 94vh;
+  margin: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #020c13;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* padding: 2.5rem var(--padding-mini) 0.75rem 0.75rem; */
+  box-sizing: border-box;
+  gap: 0 0.875rem;
+  letter-spacing: normal;
+}
+  
