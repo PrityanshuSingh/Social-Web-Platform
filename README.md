@@ -20,8 +20,8 @@ Make sure you have Node.js and npm (or yarn) installed on your local machine.
 - npm: This comes bundled with Node.js
 
 ### Run the following commands in your vscode terminal
-1. git clone -b <repository-url>
-2. cd <project-directory>
+1. git clone -b https://github.com/your-username/your-repo.git
+2. cd your-repo
 3. npm install
 4. npm run dev
 
