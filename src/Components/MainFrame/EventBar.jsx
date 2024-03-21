@@ -5,6 +5,12 @@ import EventBar from "./css/EventBar.module.css";
 function EventsPage() {
   return (
     <>
+      <img
+              loading="lazy"
+              src="https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/65f9c99cd91240b6d202dced_circle-arrow-right-solid%20(1).svg"
+              className={EventBar.eventIcon}
+              alt=""
+      />
       <main className={EventBar.eventsContainer}>
         <section className={EventBar.eventsSection}>
           <h1 className={EventBar.eventsTitle}>Events</h1>

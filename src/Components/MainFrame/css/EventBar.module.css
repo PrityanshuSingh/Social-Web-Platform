@@ -1,64 +1,86 @@
 @import "../../../global.css";
 
 .eventsContainer {
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0);
-    display: flex;
-    max-width: 480px;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    font-size: 32px;
-    color: #fff;
-    margin: 0rem 0rem 0rem 0rem;
-    max-width: 16.86rem;
-    width: 13.86rem;
-    box-sizing: border-box;
-  }
+  position: relative; /* Add this */
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  max-width: 480px;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  font-size: 32px;
+  color: #fff;
+  margin: 0rem 0rem 0rem 0rem;
+  max-width: 16.86rem;
+  width: 13.86rem;
+  box-sizing: border-box;
+}
 
-  .eventsSection {
-    border-radius: 13px;
-    background-color: rgba(12, 29, 44, 1);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    padding: 00px 20px 20px;
-    overflow-y: auto; 
+.eventsSection {
+  border-radius: 13px;
+  background-color: rgba(12, 29, 44, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  padding: 00px 20px 20px;
+  overflow-y: auto; 
 }
 
 
-  .eventsTitle {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Poppins, sans-serif;
-    font-weight: 600;
-    flex-wrap: wrap;
-    align-self: center;
-  }
+.eventsTitle {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  flex-wrap: wrap;
+  align-self: center;
+}
 
-  .eventsList {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    z-index: 5;
-    font-weight: 500;
-    overflow-x: hidden;
-  }
+.eventsList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  z-index: 5;
+  font-weight: 500;
+  overflow-x: hidden;
+}
 
 
-  .eventsListWrapper {
-    padding-right: 10px; /* Add padding to the right */
-    overflow-y: auto; /* Enable vertical scrollbar */
-    margin-right: -10px; /* Compensate for the padding */
-  }
+.eventsListWrapper {
+  padding-right: 10px; /* Add padding to the right */
+  overflow-y: auto; /* Enable vertical scrollbar */
+  margin-right: -10px; /* Compensate for the padding */
+}
 
-  .eventsListWrapper::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+.eventsListWrapper::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.eventsListWrapper::-webkit-scrollbar-thumb {
+  border-radius: 13px;
+  border: 1px solid rgba(133, 133, 133, 1);
+}
+
+.eventIcon {
+  position: fixed; 
+  top: 1px; 
+  right: 10px; 
+  width: 50px;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 922px) {
+  .eventIcon {
+    display: block; 
+    margin-top: 350px;
+    margin-right: 10px;
+    z-index: 2;
   }
-  
-  .eventsListWrapper::-webkit-scrollbar-thumb {
-    border-radius: 13px;
-    border: 1px solid rgba(133, 133, 133, 1);
+  .eventsContainer{
+    display: none;
   }
+}
