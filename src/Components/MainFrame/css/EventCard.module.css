@@ -7,33 +7,73 @@
   font-size: 14px;
   font-weight: 400;
   max-width: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0px 2px 1px rgba(241, 204, 143, 1);
 }
 
 .eventCardContent {
-  border-radius: 8px;
+  border-radius: 8px 8px 8px 8px;
   border: 0px solid #f1cc8f;
   background-color: rgba(0, 0, 0, 0.4);
-  margin-bottom: 30px;
+  padding-top: 10px;
+  z-index: 1;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .5s ease-in-out;
+}
+
+.eventCard:hover .eventCardContent {
+  max-height: 200px;
+  transition: max-height .5s ease-in-out; /* Smooth transition */
 }
 
 .eventCardImageContainer {
   border-radius: 8px;
-  box-shadow: 0px 2px 1px rgba(241, 204, 143, 1);
-  padding-bottom: 14px;
+  z-index: 4;
+  margin-bottom: -14px;
+  position:relative;
+  transition: transform .2s ease-in-out; /* Smooth transition */
+}
+
+.eventCard:hover .eventCardImageContainer {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 0px rgba(241, 204, 143, 1);
 }
 
 .eventCardImage {
   aspect-ratio: 1.75;
   object-fit: cover;
   width: 100%;
-  height: 150px;
+  height: 110px;
   border-radius: 8px;
+}
+
+/* Image overlay styles */
+.eventCardImageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity here */
+  opacity: .8; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Smooth transition */
+}
+
+.eventCard:hover .eventCardImageOverlay {
+  opacity: 0; /* Show overlay on hover */
 }
 
 .eventCardDetails {
   display: flex;
   flex-direction: column;
-  margin-top: 14px;
+  margin-top: 10px;
+  padding-bottom: 10px;
   padding: 0 17px;
 }
 
@@ -44,16 +84,16 @@
 
 .eventCardOrganization {
   font-family: Poppins, sans-serif;
-  margin: 10px 0 0;
+  margin: 7px 0 0;
 }
 
 .eventCardDescription {
   font: 12px Poppins, sans-serif;
-  margin: 12px 0 0;
+  margin: 7px 0 0;
 }
 
 .eventCardDate {
   align-self: flex-end;
   font-family: Poppins, sans-serif;
-  margin: 12px 0 0;
+  margin: 12px 0;
 }
