@@ -7,7 +7,7 @@ function EventsPage() {
     <>
       <img
               loading="lazy"
-              src="https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/65f9c99cd91240b6d202dced_circle-arrow-right-solid%20(1).svg"
+              src="https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/660161ab78f1fcc5d14a746d_double-arrow.png"
               className={EventBar.eventIcon}
               alt=""
       />
