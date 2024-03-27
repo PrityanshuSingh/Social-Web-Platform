@@ -1,8 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./css/NavigationBar.module.css";
 
 function Navigation() {
+  const [isMobile, setIsMobile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 786);
+  };
+
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const menuItems = [
     { label: "Feed", link: "Feed" },
@@ -11,20 +28,22 @@ function Navigation() {
     { label: "Resources", link: "/Resources" },
   ];
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <>
-      <img
-        loading="lazy"
-        src="https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/65f9a0cac7a2e3609aa31c83_icons8-menu%20(1).svg"
-        className={Navbar.hamburgerIcon}
-        alt=""
-        onClick={toggleMenu}
-      />
-      <div className={`${Navbar.sidebarContainer} ${isOpen ? Navbar.open : ""}`}>
+      {isMobile && (
+        <img
+          loading="lazy"
+          src="https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/65f9a0cac7a2e3609aa31c83_icons8-menu%20(1).svg"
+          className={`${Navbar.hamburgerIcon} ${isOpen ? Navbar.open : ""}`}
+          alt=""
+          onClick={toggleMenu}
+        />
+      )}
+      <div
+        className={`${Navbar.sidebarContainer} ${isOpen ? Navbar.open : ""} ${
+          isMobile ? Navbar.mobile : ""
+        }`}
+      >
         <div className={Navbar.sidebarContent}>
           <img
             loading="lazy"

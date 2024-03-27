@@ -1,7 +1,7 @@
 @import "../../../global.css";
 
 .eventsContainer {
-  position: relative; /* Add this */
+  position: relative;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0);
   display: flex;
@@ -15,6 +15,28 @@
   max-width: 16.86rem;
   width: 13.86rem;
   box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
+}
+
+.eventsContainer.open {
+  transform: translateX(0);
+}
+
+.eventsContainer.mobile {
+  position: fixed;
+  top: 0;
+  right: -40px;
+  z-index: 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  transform: translateX(100%);
+  align-items: flex-end;
+}
+
+.eventsContainer.mobile.open {
+  transform: translateX(0);
+  right: 20px;
 }
 
 .eventsSection {
@@ -25,10 +47,9 @@
   width: 100%;
   height: 100%;
   flex-direction: column;
-  padding: 00px 20px 20px;
-  overflow-y: auto; 
+  padding: 0px 20px 20px;
+  overflow-y: auto;
 }
-
 
 .eventsTitle {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -47,11 +68,10 @@
   overflow-x: hidden;
 }
 
-
 .eventsListWrapper {
-  padding-right: 10px; /* Add padding to the right */
-  overflow-y: auto; /* Enable vertical scrollbar */
-  margin-right: -10px; /* Compensate for the padding */
+  padding-right: 10px;
+  overflow-y: auto;
+  margin-right: -10px;
 }
 
 .eventsListWrapper::-webkit-scrollbar {
@@ -65,39 +85,37 @@
 }
 
 .eventIcon {
-  position: fixed; 
+  position: fixed;
   top: 0px;
-  right: 10px; 
+  right: 10px;
   width: 42px;
   cursor: pointer;
   display: none;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
 }
 
-.eventIcon::before {
-  position: fixed; 
-  top: 1px; 
-  right: 10px; 
-  width: 50px;
-  cursor: pointer;
-  display: none;
+.eventIcon.open {
+  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 960px) {
   .eventIcon {
-    display: block; 
+    display: block;
     margin-top: 25px;
     margin-right: 10px;
-    z-index: 2;
   }
-  .eventsContainer{
+}
+
+@media screen and (min-width: 961px) {
+  .eventsContainer.mobile {
     display: none;
   }
-  
 }
 
 @media screen and (max-width: 1050px) and (min-width: 960px) {
   .eventsContainer {
-    position: relative; 
+    position: relative;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0);
     display: flex;
