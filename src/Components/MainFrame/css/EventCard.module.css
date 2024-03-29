@@ -50,7 +50,6 @@
   border-radius: 8px;
 }
 
-/* Image overlay styles */
 .eventCardImageOverlay {
   position: absolute;
   top: 0;
@@ -60,13 +59,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity here */
-  opacity: .8; /* Initially hidden */
-  transition: opacity 0.5s ease; /* Smooth transition */
+  background-color: rgba(0, 0, 0, 0.7); 
+  opacity: .8; 
+  transition: opacity 0.5s ease;
 }
 
 .eventCard:hover .eventCardImageOverlay {
-  opacity: 0; /* Show overlay on hover */
+  opacity: 0;
 }
 
 .eventCardDetails {
