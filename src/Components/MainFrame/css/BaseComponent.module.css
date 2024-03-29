@@ -7,8 +7,6 @@
     justify-content: center;
     background-color: rgba(12, 29, 44, 1);
     border-radius: 13px;
-    height: 94vh;
-    width: 63vw;
     flex-wrap: wrap;
     color: var(--color-text);
     font-family: var(--font-poppins);
@@ -27,12 +25,62 @@
     align-items: center;
     padding: 2rem 1rem 2rem 1rem;
     width: 50%;
-    height: 50%;
+    height: 100%;
     font-size: var(--font-size-lgi);
     font-family: var(--font-poppins);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1080px) {
+
+/* mediaquerries*/
+
+
+@media screen and (min-width: 1536px)  {    /* For 16 inch laptops*/ 
+  .base{
+    width: 59.5vw;
+    height: 94vh;
+  }
+
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1400px) {    /* For 15 inch laptops*/ 
+  .base{
+    width: 59.5vw;
+    height: 94vh;
+  }
+
+}
+
+
+@media screen and (min-width: 1280px) and (max-width: 1320px) {    /* For 15 inch laptops*/ 
+  .base{
+    width: 51.6vw;
+    height: 94vh;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1120px) {
     .rectangle {
         width: 80%;
         height: auto;
@@ -42,17 +90,6 @@
         width: 550px;
         height: 615px;
     }
-}
-@media screen and (max-width: 1440px) {
-  .rectangle {
-      width: 80%;
-      height: auto;
-  }
-
-  .base {
-      width: 550px;
-      height: 615px;
-  }
 }
 
 
@@ -92,4 +129,3 @@
     height: 100vh;
   }
 }
-
