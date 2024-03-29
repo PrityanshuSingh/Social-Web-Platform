@@ -1,4 +1,4 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import EventCard from "./EventCard";
 import { event } from "../../Data/testevent.json";
 import EventBar from "./css/EventBar.module.css";
