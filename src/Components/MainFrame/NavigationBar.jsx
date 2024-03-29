@@ -1,6 +1,26 @@
+import React, { useState, useEffect } from "react";
 import Navbar from "./css/NavigationBar.module.css";
 
-function Navigation(){
+function Navigation() {
+  const [isMobile, setIsMobile] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 786);
+  };
+
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const menuItems = [
     { label: "Feed", link: "Feed" },
     { label: "Community", link: "/Community" },
@@ -10,13 +30,20 @@ function Navigation(){
 
   return (
     <>
-      <img
-        loading="lazy"
-        src="https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/65f9a0cac7a2e3609aa31c83_icons8-menu%20(1).svg"
-        className={Navbar.hamburgerIcon}
-        alt=""
-      />
-      <div className={Navbar.sidebarContainer}>
+      {isMobile && (
+        <img
+          loading="lazy"
+          src="https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/65f9a0cac7a2e3609aa31c83_icons8-menu%20(1).svg"
+          className={`${Navbar.hamburgerIcon} ${isOpen ? Navbar.open : ""}`}
+          alt=""
+          onClick={toggleMenu}
+        />
+      )}
+      <div
+        className={`${Navbar.sidebarContainer} ${isOpen ? Navbar.open : ""} ${
+          isMobile ? Navbar.mobile : ""
+        }`}
+      >
         <div className={Navbar.sidebarContent}>
           <img
             loading="lazy"
@@ -28,43 +55,49 @@ function Navigation(){
             Hello <br /> Username
           </h2>
           <nav className={Navbar.sidebarMenu}>
-            <a href="/Feed">
-            <img
-              loading="lazy"
-              src="https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/65fad4c8b8980ceff10ac3f2_XKmiKNuXjaUk.png"
-              className={Navbar.menuIcon}
-              alt=""
-            /></a>
-            <a href="/Community">
-            <img
-              loading="lazy"
-              src="https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/65fad4f542abee9b1e00afd3_42uLHHsAiBxH.png"
-              className={Navbar.menuIcon}
-              alt=""
-            /></a>
-            <a href="/Intersnships">
-            <img
-              loading="lazy"
-              src="https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/65fad54541e9f11aa27c9fd8_rRJmrcqDtxC0.png"
-              className={Navbar.menuIcon}
-              alt=""
-            /></a>
-            <a href="/Resources">
-            <img
-              loading="lazy"
-              src="https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/65fad589c149389b362e6b9c_bIeE9Fhcd2Lv.png"
-              className={Navbar.menuIcon}
-              alt=""
-            /></a>
+            <div className={Navbar.menuIcon}>
+              <a href="/Feed">
+                <img
+                  loading="lazy"
+                  src="https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/65fad4c8b8980ceff10ac3f2_XKmiKNuXjaUk.png"
+                  className={Navbar.menuIcon}
+                  alt=""
+                />
+              </a>
+              <a href="/Community">
+                <img
+                  loading="lazy"
+                  src="https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/65fad4f542abee9b1e00afd3_42uLHHsAiBxH.png"
+                  className={Navbar.menuIcon}
+                  alt=""
+                />
+              </a>
+              <a href="/Intersnships">
+                <img
+                  loading="lazy"
+                  src="https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/65fad54541e9f11aa27c9fd8_rRJmrcqDtxC0.png"
+                  className={Navbar.menuIcon}
+                  alt=""
+                />
+              </a>
+              <a href="/Resources">
+                <img
+                  loading="lazy"
+                  src="https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/65fad589c149389b362e6b9c_bIeE9Fhcd2Lv.png"
+                  className={Navbar.menuIcon}
+                  alt=""
+                />
+              </a>
+            </div>
             <ul className={Navbar.menuList}>
-                {menuItems.map((item, index) => (
-                  <li key={index}>
-                    <a href={item.link} className={Navbar.menuLink}>
-                      {item.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+              {menuItems.map((item, index) => (
+                <li key={index}>
+                  <a href={item.link} className={Navbar.menuLink}>
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </nav>
         </div>
       </div>
