@@ -13,7 +13,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #020c13;
+  background-color: yellow;
   flex-direction: row;
   flex-wrap: wrap;
   display: flex;
@@ -23,4 +23,7 @@ body {
   box-sizing: border-box;
   gap: 0 0.875rem;
   letter-spacing: normal;
+  overflow:auto;
 }
+
+

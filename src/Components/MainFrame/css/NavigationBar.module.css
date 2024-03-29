@@ -2,12 +2,12 @@
 
 .sidebarContainer {
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: red;
   display: flex;
-  max-width: 16.86rem;
-  width: 14.86rem;
+  width: 15.86rem;
   height: 100%;
   font-size: 32px;
+  overflow-y: auto;
   box-sizing: border-box;
   flex-direction: column;
   font-size: var(--fontSizeLgi);
@@ -15,6 +15,10 @@
   position: relative;
   left: 0;
   transition: left 0.3s ease-in-out;
+}
+
+.sidebarContainer::-webkit-scrollbar{
+  width:0;
 }
 
 .sidebarContainer.open {
@@ -131,69 +135,88 @@
   position: fixed;
 }
 
-/* Media query for mobile width */
+/* Bottom Navbar Styles */
+.bottomNavbar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1A1D2E;
+  padding: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 999;
+}
+
+.bottomNavbarIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.bottomNavbarIcon img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1920px) {    /* For Desktop monitors*/ 
+  .sidebarContainer{
+    width: 16.75vw;
+  }
+
+}
+
+
 @media screen and (max-width: 786px) {
   .sidebarContainer {
     display: none;
   }
 
   .hamburgerIcon {
-    display: block;
+    display: none;
   }
 
-  /* Add this */
-  .sidebarContainer.open {
+  .bottomNavbar {
     display: flex;
   }
 }
 
-@media screen and (max-width: 1080px) and (min-width: 786px) {
+@media screen and (max-width: 1120px) and (min-width: 786px) {
+  .sidebarContainer {
+    max-width: 8rem;
+    width: 6.78rem;
+    font-size: 24px;
+  }
+
+  .profileImage {
+    width: 150px;
+  }
+
+  .greeting {
+    font-size: var(--font-size-sm);
+  }
+
+  .sidebarContent {
+    padding: 1rem;
+  }
+
+  .sidebarMenu {
+    width: auto;
+    margin-left: 0;
+  }
+
   .menuList {
     display: none;
   }
 
-  .sidebarContainer {
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0);
-    display: flex;
-    max-width: 8rem;
-    width: 6.78rem;
-    height: 100%;
-    font-size: 24px;
-    box-sizing: border-box;
-    flex-direction: column;
-    font-size: var(--font-size-sm);
-    font-family: Poppins;
-  }
-
-  .profileImage {
-    width: 200px;
-    border: 1px solid rgba(241, 204, 143, 1);
-    border-radius: 50%;
-    max-width: 100%;
-  }
-
   .menuIcon {
-    display: flex;
-    flex-direction: column;
     width: 40px;
-    margin-top: 0px;
-    margin-left: 30px;
-    gap: 40px;
-    cursor: pointer;
-  }
-
-  .greeting {
-    color: #fff;
-    text-align: center;
-    font-feature-settings: "clig" off, "liga" off;
-    letter-spacing: 0.13px;
-    margin-top: 22px;
-    font-family: var(--fontPoppins);
-    font-size: var(--font-size-sm); /*changed font size*/
-  }
-
-  .hamburgerIcon {
-    display: none;
+    margin-left: 0px;
+    gap: 30px;
   }
 }

@@ -1,29 +1,54 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 import Card from "./css/EventCard.module.css";
 
 function EventCard({ event }) {
 
   const { image, title, organization, description, date } = event;
+  const [showDetails, setShowDetails] = useState(false);
+
+  const handleMouseEnter = () => {
+    // const eventCardView = document.getElementsByClassName(".eventCardContent");
+    // eventCardView.style.display = "block";
+    setShowDetails(true);
+  };
+
+  const handleMouseLeave = () => {
+    const eventCardDisableView = document.getElementsByClassName(".eventCardContent");
+    eventCardDisableView.style.display = "none";
+    setShowDetails(false);
+  };
 
   return (
     <div>
       <div className={Card.eventCard}>
-        <div className={Card.eventCardContent}>
-          <div className={Card.eventCardImageContainer}>
+        
+        <div
+          className={Card.eventCardImageContainer}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
             <img 
               src={image} 
               alt={title} 
-              className={Card.eventCardImage} />
-
-            <div className={Card.eventCardDetails}>
+              className={Card.eventCardImage} 
+            />
+            <div className={Card.eventCardImageOverlay}>
               <h2 className={Card.eventCardTitle}>{title}</h2>
-              <p className={Card.eventCardOrganization}>{organization}</p>
-              <p className={Card.eventCardDescription}>{description}</p>
-              <p className={Card.eventCardDate}>{date}</p>
-              
             </div>
-          </div>
         </div>
+        
+        {/* Conditionally render event details based on showDetails state */}
+        {showDetails && (
+          <div className={Card.eventCardContent} onMouseEnter={handleMouseEnter}>
+              <div className={Card.eventCardDetails}>
+                <h2 className={Card.eventCardTitle}>{title}</h2>
+                <p className={Card.eventCardOrganization}>{organization}</p>
+                <p className={Card.eventCardDescription}>{description}</p>
+                <p className={Card.eventCardDate}>{date}</p>
+              </div>
+          </div>
+        )}
       </div>
     </div>
   );
