@@ -8,7 +8,11 @@
   background-color: rgba(12, 29, 44, 1);
   border-radius: 13px;
   height: 94vh;
+<<<<<<< HEAD
   width: 56vw;
+=======
+  width: 63vw;
+>>>>>>> updates/responsiveness
   flex-wrap: wrap;
   color: var(--color-text);
   font-family: var(--font-poppins);
@@ -30,4 +34,11 @@
   height: 50%;
   font-size: var(--font-size-lgi);
   font-family: var(--font-poppins);
+}
+
+@media screen and (max-width: 768px) {
+  .rectangle {
+    width: 100%;
+    height: 50vh; 
+  }
 }
