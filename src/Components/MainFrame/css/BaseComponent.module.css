@@ -36,7 +36,7 @@
 
 @media screen and (min-width: 1536px)  {    /* For 16 inch laptops*/ 
   .base{
-    width: 59vw;
+    width: 60.1vw;
     height: 94vh;
   }
 
@@ -52,7 +52,7 @@
 
 @media screen and (min-width: 1280px) and (max-width: 1320px) {    /* For 14 inch laptops*/ 
   .base{
-    width: 52.3vw;
+    width: 53.5vw;
     height: 94vh;
   }
 }

@@ -5,7 +5,7 @@
   justify-content: center;
   background-color: red;
   display: flex;
-  width: 15.86rem;
+  width: 14.86rem;
   height: 100%;
   flex-direction: column;
   font-size: 32px;
@@ -98,7 +98,7 @@
 
 @media screen and (min-width: 1920px) {    /* For Desktop monitors*/ 
   .eventsContainer{
-    width: 16.75vw;
+    width: 16.4vw;
   }
 
 }
