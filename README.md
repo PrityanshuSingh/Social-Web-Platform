@@ -82,11 +82,8 @@ Here are some screenshots showcasing the features of [Social Media Platform]:
 3. **Internships:**
 ![Internships](screenshots/create_post.png)
 
-5. **Resources:**
+4. **Resources:**
 ![Resources](screenshots/create_post.png)
-
-6. **Notification Center:**
-![Notification Center](screenshots/notifications.png)
 
 ## Connect with Us
 
