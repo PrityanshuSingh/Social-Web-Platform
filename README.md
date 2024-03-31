@@ -73,13 +73,9 @@ This project is currently not licensed.
 
 Here are some screenshots showcasing the features of [Social Media Platform]:
 
-![Homepage](https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/66098ec95f04886eb0d42ad3_zrCrXQYEBMIg.png)
+![Homepage](https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/66098ec95f04886eb0d42ad3_zrCrXQYEBMIg.png)   ![Community](https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/66098f2ba2dd5862e9bf67b3_BhrmKKtwAVoL.png)
 
-![Community](https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/66098f2ba2dd5862e9bf67b3_BhrmKKtwAVoL.png)
-
-![Internships](https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/66098fb4a9a1ca9e3d8ee3ba_eHFLkLBIDGb1.png)
-
-![Resources](https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/66098ff9d3a32bb0fdfd07fa_E72KqFkxxo9J.png)
+![Internships](https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/66098fb4a9a1ca9e3d8ee3ba_eHFLkLBIDGb1.png)   ![Resources](https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/66098ff9d3a32bb0fdfd07fa_E72KqFkxxo9J.png)
 
 ## Connect with Us
 
