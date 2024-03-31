@@ -59,8 +59,8 @@ To run the platform locally, follow these steps:
 
 We would like to extend our sincere gratitude to the following individuals for their valuable contributions to this project:
 
-- **@prakash2003pramanick**
-- **@ShubhamPrakash26**
+- **[Prakash Pramanick](https://github.com/prakash2003pramanick)**
+- **[Shubham Prakash](https://github.com/ShubhamPrakash26)**
 
 Their expertise, insights, and commitment have been instrumental in shaping the success of our project.
 
