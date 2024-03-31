@@ -74,16 +74,16 @@ This project is currently not licensed.
 Here are some screenshots showcasing the features of [Social Media Platform]:
 
 1. **Homepage:**
-![Homepage](screenshots/homepage.png)
+![Homepage](https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/66098ec95f04886eb0d42ad3_zrCrXQYEBMIg.png)
 
 2. **Community:**
-![Community](screenshots/profile.png)
+![Community](https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/66098f2ba2dd5862e9bf67b3_BhrmKKtwAVoL.png)
 
 3. **Internships:**
-![Internships](screenshots/create_post.png)
+![Internships](https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/66098fb4a9a1ca9e3d8ee3ba_eHFLkLBIDGb1.png)
 
 4. **Resources:**
-![Resources](screenshots/create_post.png)
+![Resources](https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/66098ff9d3a32bb0fdfd07fa_E72KqFkxxo9J.png)
 
 ## Connect with Us
 
