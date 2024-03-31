@@ -4,6 +4,8 @@ This platform serves as a tailored space to streamline communication and collabo
 
 ## Features
 
+**Currently in development**
+
 ### User-Focused Features:
 
 1. **Account Creation:** Seamlessly onboard users by enabling account creation using official college email addresses.
