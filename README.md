@@ -27,7 +27,7 @@ This platform serves as a tailored space to streamline communication and collabo
 3. **Actionable Insights:** Empower administrators to delve into reported posts details, facilitating effective actions such as post removal, user warnings, or account suspensions.
 
 These features aim to enhance user engagement, streamline administrative tasks, and foster a vibrant and collaborative academic community.
-For more features, refer to our **[S]([https://github.com/prakash2003pramanick](https://docs.google.com/document/d/1_RNNwUKHba_-IL5_A86L3PYQ1546jdew2NcXapZSYRQ/edit?usp=sharing)**
+For more features, refer to our **[SRS Documentation](https://docs.google.com/document/d/1_RNNwUKHba_-IL5_A86L3PYQ1546jdew2NcXapZSYRQ/edit?usp=sharing)**
 
 ## Tech Stack
 
