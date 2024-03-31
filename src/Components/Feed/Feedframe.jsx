@@ -1,24 +1,225 @@
-import styles from "./css/Feedframe.module.css";
+import { useState } from "react";
+import Feed from "./css/Feedframe.module.css";
+import testfeed from "../../Data/testfeed.json";
 
-function Feedframe() {
-    return (
-      <div className={styles.feedFrame}>
-        <img className={styles.feedFrameChild} alt="" src="/rectangle-13.svg" />
-        <div className={styles.feed}>Feed</div>
-        <div className={styles.frameParent}>
-          <div className={styles.unitPostExample1Parent}>
 
-            <img
-              className={styles.scrollbarIcon}
-              loading="eager"
-              alt=""
-              src="/scrollbar.svg"
-            />
-          </div>
-        
+function FeedFrame() {
+
+  const [posts, setPosts] = useState(testfeed);
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  // useEffect(() => {
+  //   // Fetch data from the test JSON file
+  //   setPosts(testData);
+  // }, []);
+
+  // const fetchPosts = async () => {
+  //   try {
+  //     const response = await fetch("/path/to/testData.json"); //fetching from json file for testing
+  //     const data = await response.json();
+  //     setPosts(data);
+  //   } catch (error) {
+  //     console.error("Error fetching posts:", error);
+  //   }
+  // };
+
+  const handleSetting = (postId) => {
+    setShowDropdown((prev) => ({
+      ...prev,
+      [postId]: !prev[postId]
+    }));
+  };
+
+  const handleLike = async (postId) => {
+    try {
+      // Simulate liking post by updating the like count
+      const updatedPosts = posts.map((post) => {
+        if (post.id === postId) {
+          console.log(post.likes);
+          return { ...post, likes: post.likes + 1 };
+        }
+        return post;
+      });
+      setPosts(updatedPosts);
+    } catch (error) {
+      console.error("Error liking post:", error);
+    }
+  };
+
+  const handleComment = async (postId, comment) => {
+    try {
+      // Simulate adding a comment by updating the comments array
+      const updatedPosts = posts.map((post) => {
+        if (post.id === postId) {
+          console.log(post.comments);
+          return {
+            ...post,
+            comments: [...post.comments, { text: comment, user: "You" }],
+          };
+        }
+        return post;
+      });
+      setPosts(updatedPosts);
+    } catch (error) {
+      console.error("Error commenting on post:", error);
+    }
+  };
+
+  const handleShare = async (postId) => {
+    try {
+      // Simulate sharing post by incrementing share count
+      const updatedPosts = posts.map((post) => {
+        if (post.id === postId) {
+          console.log(post.shares);
+          return { ...post, shares: post.shares + 1 };
+        }
+        return post;
+      });
+      setPosts(updatedPosts);
+    } catch (error) {
+      console.error("Error sharing post:", error);
+    }
+  };
+
+  // FOR FETCHING FROM BACKEND API
+  // const handleLike = async (postId) => {
+  //   try {
+  //     await fetch(`/api/posts/${postId}/like`, {
+  //       method: "POST",
+  //     });
+  //     fetchPosts();
+  //   } catch (error) {
+  //     console.error("Error liking post:", error);
+  //   }
+  // };
+  
+
+  // const handleComment = async (postId, comment) => {
+  //   try {
+  //     await fetch(`/api/posts/${postId}/comment`, {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({ comment }),
+  //     });
+  //     fetchPosts();
+  //   } catch (error) {
+  //     console.error("Error commenting on post:", error);
+  //   }
+  // };
+
+  // const handleShare = async (postId) => {
+  //   try {
+  //     await fetch(`/api/posts/${postId}/share`, {
+  //       method: "POST",
+  //     });
+  //     fetchPosts();
+  //   } catch (error) {
+  //     console.error("Error sharing post:", error);
+  //   }
+  // };
+
+  return (
+    <div>
+      <div className={Feed.feedContainer}>
+        <div className={Feed.feedTitle}>Feed</div>
+        <div className={Feed.postList}>
+          {posts.map((post) => (
+            <div key={post.id} className={Feed.postCard}>
+              <div className={Feed.postContent}>
+                <div className={Feed.postHeader}>
+                
+                  {/*User Info*/}
+                  <div className={Feed.userInfo}>
+                    <img
+                      loading="lazy"
+                      src={post.user.avatar}
+                      className={Feed.userAvatar}
+                    />
+                    <div className={Feed.username}>{post.user.username}</div>
+                  </div>
+
+                  <div className={Feed.postBody}>
+
+                    {/*Post Image*/}
+                    <div className={Feed.postImageColumn}>
+                   
+                        <img
+                          loading="lazy"
+                          src={post.image}
+                          className={Feed.postImage}
+                        />
+                    </div>
+
+                    {/*Post title and description*/}
+                    <div className={Feed.postDetailsColumn}>
+                      <div className={Feed.postDetails}>
+                        <div className={Feed.postTitle}>{post.title}</div>
+                          <div className={Feed.postDescription}>
+                            {post.description}
+                          </div>
+                          <div className={Feed.postTags}>{post.tags.join(" ")}</div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                {/*Post icon Actions*/}
+                <div className={Feed.postActions}>
+                  <img
+                    loading="lazy"
+                    src="https://uploads-ssl.webflow.com/645fbc01f38b6fb6255c240c/6608c8750678d8241d39f3d9_extrasettings.png"
+                    className={Feed.actionIcon}
+                    onClick={() => handleSetting(post.id)}
+                  />
+                  <img
+                    loading="lazy"
+                    src="https://uploads-ssl.webflow.com/645fbc01f38b6fb6255c240c/6608c8750678d8241d39f3d3_comment.png"
+                    className={Feed.actionIcon}
+                    onClick={() => handleComment(post.id, "New comment")}
+                  />
+                  <img
+                    loading="lazy"
+                    src="https://uploads-ssl.webflow.com/645fbc01f38b6fb6255c240c/6608c875b7bf7090954941cf_like.png"
+                    className={Feed.actionIcon}
+                    onClick={() => handleLike(post.id)}
+                  />
+                  <div className={Feed.actionCount}>{post.likes}</div>
+                  <img
+                    loading="lazy"
+                    src="https://uploads-ssl.webflow.com/645fbc01f38b6fb6255c240c/6608c8756ef9e7b1806985d7_share.png"
+                    className={Feed.actionIcon}
+                    onClick={() => handleShare(post.id)}
+                  />
+                  <div className={Feed.actionCount}>{post.shares}</div>
+
+                  {/* Dropdown menu */}
+                  {showDropdown[post.id] && (
+                    <div className={Feed.dropdownMenu}>
+                      <div
+                        className={Feed.dropdownItem}
+                        onClick={() => console.log("Report")}
+                      >
+                        Report
+                      </div>
+                      <div
+                        className={Feed.dropdownItem}
+                        onClick={() => console.log("Save")}
+                      >
+                        Save
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+          ))}
         </div>
       </div>
-    );
-  }  
-  export default Feedframe;
-  
+    </div>
+  );
+}
+
+export default FeedFrame;

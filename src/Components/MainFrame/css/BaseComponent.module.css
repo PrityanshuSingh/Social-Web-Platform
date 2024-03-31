@@ -13,18 +13,23 @@
     font-size: var(--font-size-lg);
     color: white;
     text-align: center;
+    overflow: auto;
     margin-right: 0rem;
 }
 
 .rectangle {
-    border-radius: 8px;
+    border-radius: 13px;
+    position: relative;
     background-color: var(--color-background);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: lightgreen;
+    opacity: 0.5;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem 1rem 2rem 1rem;
-    width: 50%;
+    margin: 1rem 1rem 1rem 1rem;
+    width: 90%;
     height: 100%;
     font-size: var(--font-size-lgi);
     font-family: var(--font-poppins);
