@@ -4,7 +4,7 @@ This platform serves as a tailored space to streamline communication and collabo
 
 ## Features
 
-**Currently in development**
+**Currently in development.**
 
 ### User-Focused Features:
 
