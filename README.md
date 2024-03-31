@@ -28,20 +28,6 @@ This platform serves as a tailored space to streamline communication and collabo
 
 These features aim to enhance user engagement, streamline administrative tasks, and foster a vibrant and collaborative academic community.
 
-## Getting Started
-
-1. **Installation:**
-   - Clone this repository: `git clone https://github.com/your-username/your-repo.git`
-   - Navigate to the project directory: `cd your-repo`
-   - Install dependencies: `npm install`
-
-2. **Usage:**
-   - Customize the platform according to your preferences.
-   - Integrate your social media accounts through the user-friendly interface.
-
-3. **Contributing:**
-   - We welcome contributions! Fork the repository and submit a pull request with your enhancements.
-
 ## Tech Stack
 
 The platform is built using the following technologies:
@@ -71,7 +57,12 @@ To run the platform locally, follow these steps:
 
 ## Acknowledgments
 
-- Mention any contributors, libraries, or resources that inspired or were used in the development of this platform.
+We would like to extend our sincere gratitude to the following individuals for their valuable contributions to this project:
+
+- **@prakash2003pramanick**
+- **@ShubhamPrakash26**
+
+Their expertise, insights, and commitment have been instrumental in shaping the success of our project.
 
 ## License
 
@@ -79,22 +70,25 @@ This project is currently not licensed.
 
 ## Screenshots
 
-Here are some screenshots showcasing the features of [Your Social Media Platform Name]:
+Here are some screenshots showcasing the features of [Social Media Platform]:
 
 1. **Homepage:**
 ![Homepage](screenshots/homepage.png)
 
-2. **User Profile:**
-![User Profile](screenshots/profile.png)
+2. **Community:**
+![Community](screenshots/profile.png)
 
-3. **Create Post:**
-![Create Post](screenshots/create_post.png)
+3. **Internships:**
+![Internships](screenshots/create_post.png)
 
-4. **Notification Center:**
+5. **Resources:**
+![Resources](screenshots/create_post.png)
+
+6. **Notification Center:**
 ![Notification Center](screenshots/notifications.png)
 
 ## Connect with Us
 
-Feel free to explore more features and functionalities in [Your Social Media Platform Name]!
+Feel free to explore more features and functionalities in [Social Media Platform]!
 
 Happy Connecting! 🚀
