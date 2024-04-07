@@ -171,12 +171,6 @@ function FeedFrame() {
                 <div className={Feed.postActions}>
                   <img
                     loading="lazy"
-                    src="https://uploads-ssl.webflow.com/645fbc01f38b6fb6255c240c/6608c8750678d8241d39f3d9_extrasettings.png"
-                    className={Feed.actionIcon}
-                    onClick={() => handleSetting(post.id)}
-                  />
-                  <img
-                    loading="lazy"
                     src="https://uploads-ssl.webflow.com/645fbc01f38b6fb6255c240c/6608c8750678d8241d39f3d3_comment.png"
                     className={Feed.actionIcon}
                     onClick={() => handleComment(post.id, "New comment")}
@@ -194,6 +188,7 @@ function FeedFrame() {
                     className={Feed.actionIcon}
                     onClick={() => handleShare(post.id)}
                   />
+                  
                   <div className={Feed.actionCount}>{post.shares}</div>
 
                   {/* Dropdown menu */}
@@ -213,6 +208,13 @@ function FeedFrame() {
                       </div>
                     </div>
                   )}
+                  
+                  <img
+                    loading="lazy"
+                    src="https://uploads-ssl.webflow.com/645fbc01f38b6fb6255c240c/6608c8750678d8241d39f3d9_extrasettings.png"
+                    className={Feed.actionIcon}
+                    onClick={() => handleSetting(post.id)}
+                  />
                 </div>
               </div>
           ))}

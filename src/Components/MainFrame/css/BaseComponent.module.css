@@ -58,8 +58,30 @@
 @media screen and (min-width: 1280px) and (max-width: 1320px) {    /* For 14 inch laptops*/ 
   .base{
     width: 53.5vw;
+    height: 96vh;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {    /* For 13 inch laptops*/ 
+  .base{
+    width: 60.5vw;
+    height: 96vh;
+  }
+  
+}
+@media screen and (min-width: 786px) and (max-width: 1080px) {    /* For Tablets*/ 
+  .base{
+    width: 78.5vw;
     height: 94vh;
   }
+  
+}
+@media screen and (max-width: 426px) {    /* For Mobile*/ 
+  .base{
+    width: 94%;
+    height: 86vh;
+  }
+  
 }
 
 
@@ -80,8 +102,7 @@
 
 
 
-
-
+/*
 
 @media screen and (min-width: 768px) and (max-width: 1120px) {
     .rectangle {
@@ -117,7 +138,7 @@
   }
 }
 
-/*For mobile devices */
+/*For mobile devices 
 
 @media screen and (max-width: 655px) {
   .rectangle {
@@ -132,3 +153,5 @@
     height: 100vh;
   }
 }
+
+*/

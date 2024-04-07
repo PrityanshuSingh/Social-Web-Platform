@@ -25,9 +25,9 @@ function Navigation() {
   const menuItems = [
     { label: "Feed", link: "/Feed", icon: "https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/65fad4c8b8980ceff10ac3f2_XKmiKNuXjaUk.png" },
     { label: "Community", link: "/Community", icon: "https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/65fad4f542abee9b1e00afd3_42uLHHsAiBxH.png" },
+    { label: "Create", link: "/Feed", icon: "https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/6608681d20cc2d7da71c4d00_plus-circle-1441-svgrepo-com%20(1).svg" },
     { label: "Internships", link: "/Internships", icon: "https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/65fad54541e9f11aa27c9fd8_rRJmrcqDtxC0.png" },
     { label: "Resources", link: "/Resources", icon: "https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/65fad589c149389b362e6b9c_bIeE9Fhcd2Lv.png" },
-    { label: "Create", link: "/Feed", icon: "https://uploads-ssl.webflow.com/65e4aa9d7c506b88d60a346e/65fad4c8b8980ceff10ac3f2_XKmiKNuXjaUk.png" },
   ];
 
   return (
