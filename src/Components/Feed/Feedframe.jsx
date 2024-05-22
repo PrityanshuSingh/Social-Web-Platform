@@ -2,7 +2,6 @@ import { useState } from "react";
 import Feed from "./css/Feedframe.module.css";
 import testfeed from "../../Data/testfeed.json";
 
-
 function FeedFrame() {
 
   const [posts, setPosts] = useState(testfeed);
@@ -171,20 +170,20 @@ function FeedFrame() {
                 <div className={Feed.postActions}>
                   <img
                     loading="lazy"
-                    src="https://uploads-ssl.webflow.com/645fbc01f38b6fb6255c240c/6608c8750678d8241d39f3d3_comment.png"
+                    src="assets/comment.svg"
                     className={Feed.actionIcon}
                     onClick={() => handleComment(post.id, "New comment")}
                   />
                   <img
                     loading="lazy"
-                    src="https://uploads-ssl.webflow.com/645fbc01f38b6fb6255c240c/6608c875b7bf7090954941cf_like.png"
+                    src="assets/like.svg"
                     className={Feed.actionIcon}
                     onClick={() => handleLike(post.id)}
                   />
                   <div className={Feed.actionCount}>{post.likes}</div>
                   <img
                     loading="lazy"
-                    src="https://uploads-ssl.webflow.com/645fbc01f38b6fb6255c240c/6608c8756ef9e7b1806985d7_share.png"
+                    src="assets/share.svg"
                     className={Feed.actionIcon}
                     onClick={() => handleShare(post.id)}
                   />
@@ -211,7 +210,7 @@ function FeedFrame() {
                   
                   <img
                     loading="lazy"
-                    src="https://uploads-ssl.webflow.com/645fbc01f38b6fb6255c240c/6608c8750678d8241d39f3d9_extrasettings.png"
+                    src="assets/threedots.svg"
                     className={Feed.actionIcon}
                     onClick={() => handleSetting(post.id)}
                   />

@@ -138,6 +138,11 @@
   color: #fff;
 }
 
+.menuIcon:hover > svg > * {
+  fill: #ff6347;
+  transition: fill 0.3s ease;
+}
+
 .menuLink {
   font-family: Poppins, sans-serif;
   text-decoration: none;
@@ -147,31 +152,16 @@
 
 .menuLink:hover {
   color: #f1cc8f;
-  transition: .2s linear;
+  transition: 0.2s linear;
 }
 
 .menuIcon:hover {
   color: #f1cc8f;
-  transition: .2s linear;
+  transition: 0.2s linear;
 }
 
 .menuLink:not(:first-child) {
   margin-top: 3px;
-}
-
-.hamburgerIcon {
-  display: none;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 1000;
-}
-
-.hamburgerIcon.open {
-  position: fixed;
 }
 
 /* Bottom Navbar Styles */
@@ -203,29 +193,22 @@
 
 /* Media Queries */
 
-@media screen and (min-width: 1920px) {    /* For Desktop monitors*/ 
+@media screen and (min-width: 1536px) {    /* For Desktop monitors*/ 
   .sidebarContainer{
-    width: 16.4vw;
+    width: 15.4vw;
   }
 
 }
 
-
-@media screen and (max-width: 786px) {
-  .sidebarContainer {
-    display: none;
-  }
-
-  .hamburgerIcon {
-    display: none;
-  }
-
-  .bottomNavbar {
-    display: flex;
+@media screen and (max-width: 1360px) {    /* For Desktop monitors*/ 
+  .sidebarContainer{
+    width: 14.4vw;
   }
 }
 
-@media screen and (max-width: 1120px) and (min-width: 786px) {
+
+
+@media screen and (max-width: 1080px){
   .sidebarContainer {
     max-width: 8rem;
     width: 6.78rem;
@@ -259,3 +242,15 @@
     gap: 30px;
   }
 }
+
+
+@media screen and (max-width: 786px) {
+  .sidebarContainer {
+    display: none;
+  }
+
+  .bottomNavbar {
+    display: flex;
+  }
+}
+
