@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Feed from "./css/Feedframe.module.css";
-import testfeed from "../../Data/testfeed.json";
+import Feed from "./styles/FeedFrame.module.css";
+import testfeed from "../../../data/TestFeed.json";
 
 function FeedFrame() {
 
@@ -121,8 +121,7 @@ function FeedFrame() {
 
   return (
     <div>
-      <div className={Feed.feedContainer}>
-        <div className={Feed.feedTitle}>Feed</div>
+      <div className={Feed.postContainer}>
         <div className={Feed.postList}>
           {posts.map((post) => (
             <div key={post.id} className={Feed.postCard}>

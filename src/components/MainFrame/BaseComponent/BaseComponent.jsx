@@ -1,11 +1,11 @@
-import Feed from "../../Pages/Feed";
-import Base from "./css/BaseComponent.module.css"
+import FeedFrame from "../../Feed/FeedFrame/FeedFrame";
+import Base from "./styles/BaseComponent.module.css"
 
 function BaseComponent() {
   return (
     <div>
         <div className={Base.base}>
-            {<Feed />}  
+            {<FeedFrame />}  
         </div>  
     </div>
   )

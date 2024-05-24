@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Navbar from "./css/NavigationBar.module.css";
+import Navbar from "./styles/NavigationBar.module.css";
 
 function Navigation() {
   const [isMobile, setIsMobile] = useState(false);
@@ -45,7 +45,7 @@ function Navigation() {
         <div className={`${Navbar.sidebarContainer} ${isOpen ? Navbar.open : ""}`}>
           <div className={Navbar.sidebarContent}>
             <h2 className={Navbar.logo}>
-              Logo Name
+              Logo
             </h2>
             <div className={Navbar.profileImageContainer}>
               <img

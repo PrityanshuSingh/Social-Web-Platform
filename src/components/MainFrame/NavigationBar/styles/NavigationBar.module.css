@@ -1,8 +1,8 @@
-@import "../../../global.css";
+@import "../../../../Global.css";
 
 .sidebarContainer {
   justify-content: center;
-  /* background-color: red; */
+  background-color: red;
   display: flex;
   width: 15.86rem;
   height: 100%;
@@ -202,7 +202,7 @@
 
 @media screen and (max-width: 1360px) {    /* For Desktop monitors*/ 
   .sidebarContainer{
-    width: 14.4vw;
+    width: 18.3vw;
   }
 }
 

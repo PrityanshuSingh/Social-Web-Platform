@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import Card from "./css/EventCard.module.css";
+import Card from "./styles/EventCard.module.css";
 
 function EventCard({ event }) {
 

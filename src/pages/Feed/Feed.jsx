@@ -1,4 +1,4 @@
-import Feedframe from "../Components/Feed/Feedframe";
+import Feedframe from "../../components/Feed/FeedFrame/FeedFrame";
 
 function Feed() {
   return (

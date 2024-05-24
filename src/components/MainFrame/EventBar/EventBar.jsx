@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import EventCard from "./EventCard";
-import { event } from "../../Data/testevent.json";
-import EventBar from "./css/EventBar.module.css";
+import { event } from "../../../data/TestEvent.json";
+import EventBar from "./styles/EventBar.module.css";
 
 function EventsPage() {
   const [isOpen, setIsOpen] = useState(false);
