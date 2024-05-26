@@ -394,159 +394,245 @@
 /* mediaquerries*/
 @media screen and (min-width: 1536px) {    /* For 15 inch laptops*/ 
   .feedContainer {
-    width: 59.1vw;
-    height: 90vh;
-  }
-  .feedTitle {
-    margin-top: 20px;
-    margin-bottom: 12px;
-    margin-left: 12px;
+    width: 52rem;
   }
   .postList {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding-right: 0;
+    width: 52rem;
   }
-
   .postCard {
-    width: 100%;
-    height: auto;
-    display: flex;
-    margin-left: 0px;
-    flex-direction: column;
+    width: 48rem;
+    height: 380px;
   }
-
-  .postImage {
-    aspect-ratio: 0.97;
-    flex-grow: 0;
-    height: auto;
-    opacity: 1;
-    margin-left: 50px;
-    width: 350px;
-    height: 360px;
-    order: 1; 
-  }
-
   .postContent {
-    width: 94%;
-    align-items: center;
-    order: 2; 
+    display: flex;
+    width: 100%;
+    gap: 0px;
+    height: 300px;
+    padding: 18px 10px 20px 20px;
   }
-
   .postHeader {
     width: 100%;
-    height: auto;
-    margin: 1.5rem;
+    height: 100%;
+    margin: 5px;
   }
-
-  .postBody {
-    height: 35rem;
-    flex-direction: column;
+  .userInfo {
+    margin-top: -12px;
+    margin-left: -10px;
+    margin-bottom: -30px;;
   }
-
   .postImageColumn {
-    width: 100%;
-    justify-content: center;
+    width: 50%;
+    margin-left: -10px;
   }
-
+  .postImage {
+    height: 250px;
+    border-radius: 13px;
+    width: 300px; 
+  }
+  
   .postDetailsColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
     width: 100%;
-    margin-left: 0;
-    margin-top: 1.5rem;
+    margin-left: 15px;
+    /* background-color: tomato; */
   }
+  
+  @media (max-width: 991px) {
+    .postDetailsColumn {
+      width: 100%;
+    }
+  }
+  
+  .postDetails {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 10px;
+    text-align: left;
+    font-weight: 400;
+  }
+  
+  @media (max-width: 991px) {
+    .postDetails {
+      margin-top: 17px;
+    }
+  }
+  
   .postTitle {
-   width: 100%;
-   margin-left: 10px;
+    border-radius: 12px;
+    border-color: rgba(163, 173, 208, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: start;
+    color: #f5f5f5;
+    justify-content: center;
+    padding: 10px 10px;
+    width: 95%;
+    font: 500 16px Poppins, sans-serif;
   }
+  
+  @media (max-width: 991px) {
+    .postTitle {
+      padding-right: 20px;
+    }
+  }
+  
   .postDescription {
-    width: 100%; 
-    margin-left: 10px;
+    height: 125px;
+    width: 94%;
   }
+  
   .postActions {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0.5rem 15px;
-    order: 3;
+    align-items: center;
+    gap: 116px;
+    margin: 0px 10px 10px 15px;
+    position: relative;
+  }
+  
+  .actionIcon {
+    aspect-ratio: 1.02;
+    object-fit: auto;
+    object-position: center;
+    width: 34px;
+    margin-top: 0px;
+    /* background-color: #d9d9d9; */
+    cursor: pointer;
+  }
+  
+  .actionCount {
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    margin-left: 5px; /* add some left margin to separate from the icon */
+    line-height: 34px; /* align vertically with the icons */
   }
 }
 
-@media screen and (max-width: 1536px) {    /* For 15 inch laptops*/ 
+@media screen and (max-width: 1536px) and (min-width: 1280px) {    /* For 15 inch laptops*/ 
   .feedContainer {
-    width: 42rem;
-    margin-left: 30px;
-    padding: 0.5rem;
-  }
-  .feedTitle {
-    margin-top: 20px;
-    margin-bottom: 12px;
-    margin-left: 12px;
+    width: 40rem;
   }
   .postList {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding-right: 0;
+    width: 52rem;
   }
-
   .postCard {
-    width: 100%;
-    height: auto;
-    display: flex;
-    margin-left: 0px;
-    flex-direction: column;
+    width: 48rem;
+    height: 380px;
   }
-
-  .postImage {
-    aspect-ratio: 0.97;
-    flex-grow: 0;
-    height: auto;
-    opacity: 1;
-    margin-left: 50px;
-    width: 300px;
-    height: 260px;
-    order: 1; 
-  }
-
   .postContent {
-    width: 80%;
-    order: 2; 
+    display: flex;
+    width: 100%;
+    gap: 0px;
+    height: 300px;
+    padding: 18px 10px 20px 20px;
   }
-
   .postHeader {
     width: 100%;
-    height: auto;
-    margin: 0.5rem;
+    height: 100%;
+    margin: 5px;
   }
-
-  .postBody {
-    height: auto;
-    flex-direction: column;
+  .userInfo {
+    margin-top: -12px;
+    margin-left: -10px;
+    margin-bottom: -30px;;
   }
-
   .postImageColumn {
-    width: 100%;
-    justify-content: center;
+    width: 50%;
+    margin-left: -10px;
   }
-
+  .postImage {
+    height: 250px;
+    border-radius: 13px;
+    width: 300px; 
+  }
+  
   .postDetailsColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
     width: 100%;
-    margin-left: 0;
-    margin-top: 0.5rem;
+    margin-left: 15px;
+    /* background-color: tomato; */
   }
+  
+  @media (max-width: 991px) {
+    .postDetailsColumn {
+      width: 100%;
+    }
+  }
+  
+  .postDetails {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 10px;
+    text-align: left;
+    font-weight: 400;
+  }
+  
+  @media (max-width: 991px) {
+    .postDetails {
+      margin-top: 17px;
+    }
+  }
+  
   .postTitle {
-   width: 38rem;
-   margin-left: 10px;
+    border-radius: 12px;
+    border-color: rgba(163, 173, 208, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: start;
+    color: #f5f5f5;
+    justify-content: center;
+    padding: 10px 10px;
+    width: 95%;
+    font: 500 16px Poppins, sans-serif;
   }
+  
+  @media (max-width: 991px) {
+    .postTitle {
+      padding-right: 20px;
+    }
+  }
+  
   .postDescription {
-    width: 38rem; 
-    margin-left: 10px; 
+    height: 125px;
+    width: 94%;
   }
+  
   .postActions {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0.5rem 15px;
-    order: 3;
+    align-items: center;
+    gap: 116px;
+    margin: 0px 10px 10px 15px;
+    position: relative;
+  }
+  
+  .actionIcon {
+    aspect-ratio: 1.02;
+    object-fit: auto;
+    object-position: center;
+    width: 34px;
+    margin-top: 0px;
+    /* background-color: #d9d9d9; */
+    cursor: pointer;
+  }
+  
+  .actionCount {
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    margin-left: 5px; /* add some left margin to separate from the icon */
+    line-height: 34px; /* align vertically with the icons */
   }
 }
 

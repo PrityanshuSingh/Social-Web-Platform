@@ -34,6 +34,24 @@ function App() {
     
           <Routes>
             <Route
+              path="/feed"
+              element={
+                <Suspense fallback={<Loading />}>
+                  <MainFrame />
+                </Suspense>
+              }
+            />
+
+            <Route
+              path="/community"
+              element={
+                <Suspense fallback={<Loading />}>
+                  <MainFrame />
+                </Suspense>
+              }
+            />
+
+            <Route
               path="/"
               element={
                 <Suspense fallback={<Loading />}>
