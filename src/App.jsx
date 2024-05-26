@@ -37,7 +37,7 @@ function App() {
               path="/feed"
               element={
                 <Suspense fallback={<Loading />}>
-                  <MainFrame />
+                  <MainFrame path="/feed" />
                 </Suspense>
               }
             />
@@ -46,7 +46,7 @@ function App() {
               path="/community"
               element={
                 <Suspense fallback={<Loading />}>
-                  <MainFrame />
+                  <MainFrame path="/community" />
                 </Suspense>
               }
             />
@@ -55,7 +55,7 @@ function App() {
               path="/"
               element={
                 <Suspense fallback={<Loading />}>
-                  <MainFrame />
+                  <MainFrame path="/" />
                 </Suspense>
               }
             />

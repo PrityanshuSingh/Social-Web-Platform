@@ -1,11 +1,11 @@
-// import Feedframe from "../../components/Feed/FeedFrame/FeedFrame";
+import CommunityFrame from "../../components/Community/CommunityFrame/CommunityFrame";
 
-function Community() {
+function Feed() {
   return (
     <>
-      <h1>Currently in development</h1>
+      <CommunityFrame />
     </> 
   );
 }
 
-export default Community;
+export default Feed;

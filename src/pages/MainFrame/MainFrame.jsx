@@ -3,12 +3,12 @@ import BaseComponent from "../../components/MainFrame/BaseComponent/BaseComponen
 import EventBar from "../../components/MainFrame/EventBar/EventBar";
 import mainframe from "./styles/MainFrame.module.css";
 
-function MainFrame() {
+function MainFrame(path) {
   return (
     <>
       <div className={mainframe.frame}>
         <NavigationBar />
-        <BaseComponent />
+        <BaseComponent path={path.path}/>
         <EventBar />
       </div>  
     </> 

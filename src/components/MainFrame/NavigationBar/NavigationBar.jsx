@@ -23,10 +23,10 @@ function Navigation() {
   }, []);
 
   const menuItems = [
-    { label: "Feed", link: "/Feed", icon: "assets/explore.svg" },
-    { label: "Community", link: "/Community", icon: "assets/community.svg" },
-    { label: "Create", link: "/Feed", icon: "assets/create.svg" },
-    { label: "Internships", link: "/Internships", icon: "assets/internship.svg" },
+    { label: "Feed", link: "/feed", icon: "assets/explore.svg" },
+    { label: "Community", link: "/community", icon: "assets/community.svg" },
+    { label: "Create", link: "/create", icon: "assets/create.svg" },
+    { label: "Profile", link: "/profile", icon: "assets/internship.svg" },
   ];
 
   return (
