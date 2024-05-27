@@ -1,8 +1,6 @@
 import { useState } from "react";
 import Feed from "./styles/FeedPost.module.css";
-import testfeed from "../../../data/testfeed.json";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComment, faThumbsUp, faShare, faEllipsisV} from "@fortawesome/free-solid-svg-icons";
+import testfeed from "../../../data/TestFeed.json";
 
 function FeedFrame() {
 
