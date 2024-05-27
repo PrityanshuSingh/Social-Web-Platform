@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Feed from "./styles/FeedPost.module.css";
-import testfeed from "../../../data/TestFeed.json";
+import testfeed from "../../../data/testfeed.json";
 
 function FeedFrame() {
 
