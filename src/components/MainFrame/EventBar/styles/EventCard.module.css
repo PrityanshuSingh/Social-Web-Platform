@@ -3,6 +3,7 @@
 .eventCard {
   border-radius: 8px;
   background-color: #2b304d;
+  background: linear-gradient(330deg, rgba(66, 80, 136, 0.4) 20%, rgba(0, 0, 0, 0.4) 80%);
   color: #fff;
   font-size: 14px;
   font-weight: 400;

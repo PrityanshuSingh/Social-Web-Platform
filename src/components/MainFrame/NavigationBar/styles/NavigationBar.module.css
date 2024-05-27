@@ -2,7 +2,7 @@
 
 .sidebarContainer {
   justify-content: center;
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   width: 15.86rem;
   height: 100%;

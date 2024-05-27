@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Feed from "./styles/FeedPost.module.css";
 import testfeed from "../../../data/testfeed.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faComment, faThumbsUp, faShare, faEllipsisV} from "@fortawesome/free-solid-svg-icons";
 
 function FeedFrame() {
 
@@ -79,6 +81,8 @@ function FeedFrame() {
       console.error("Error sharing post:", error);
     }
   };
+
+  
 
   // FOR FETCHING FROM BACKEND API
   // const handleLike = async (postId) => {
@@ -165,11 +169,11 @@ function FeedFrame() {
                   </div>
                 </div>
 
-                {/*Post icon Actions*/}
+                {/* Post icon Actions */}
                 <div className={Feed.postActions}>
                   <img
-                    loading="lazy"
-                    src="assets/comment.svg"
+                  loading="lazy"
+                  src="assets/comment.svg"
                     className={Feed.actionIcon}
                     onClick={() => handleComment(post.id, "New comment")}
                   />
@@ -180,13 +184,13 @@ function FeedFrame() {
                     onClick={() => handleLike(post.id)}
                   />
                   <div className={Feed.actionCount}>{post.likes}</div>
+
                   <img
                     loading="lazy"
                     src="assets/share.svg"
                     className={Feed.actionIcon}
                     onClick={() => handleShare(post.id)}
                   />
-                  
                   <div className={Feed.actionCount}>{post.shares}</div>
 
                   {/* Dropdown menu */}

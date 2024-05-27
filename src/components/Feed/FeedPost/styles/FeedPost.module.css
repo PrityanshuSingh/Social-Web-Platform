@@ -4,15 +4,16 @@
 .postContainer {
   border-radius: 13px;
   background-color: rgba(12, 29, 44, 1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   z-index: 3;
   display: flex;
   flex-wrap: wrap;
   top:0;
-  width:rem;
-  height: 73vh;
+  width:42rem;
+  height: 78vh;
+  /* background-color: lime; */
   flex-direction: row;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 0rem 1rem 0rem 0rem;
   /* background-color: lime; */
   /* background-color:firebrick;
   opacity: .5; */
@@ -21,7 +22,7 @@
 
 .postContainer::-webkit-scrollbar {
   width: 10px;
-  height: 100px;
+  height: 10px;
 }
 
 .postContainer::-webkit-scrollbar-thumb {
@@ -52,10 +53,9 @@
   gap: 15px;
   width: 650px;
   width: 3.8rem;
-  height: 78vh;
+  height: 30vh;
   flex-direction: column;
-  background-color: yellow;
-  overflow-y: auto;
+  /* background-color: yellow; */
   padding-right: 10px;
   box-sizing:border-box;
 }
@@ -77,21 +77,24 @@
 }
 
 .postCard {
-  border-radius: 16px;
-  background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  background: linear-gradient(330deg, rgba(66, 80, 136, 0.2) 10%, rgba(0, 0, 0, 0.4) 90%);
+  border: 1px solid rgba(255, 255, 255, 0.418);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   display: flex;
   width: 100%;
   height: 300.06px;
-  gap:0px;
-  background-color: purple;
+  gap: 0px;
+  /* background-color: purple; */
   flex-direction: row;
-  justify-content:baseline;
+  justify-content: baseline;
   flex-grow: 1;
   flex-basis: 0;
   flex-wrap: wrap;
   padding-bottom: 5px;
+  position: relative;
 }
+
 
 @media (max-width: 991px) {
   .postCard {
@@ -99,15 +102,9 @@
   }
 }
 
-/* .postContent {
-  border-radius: 16px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  display: flex;
-  width: 600px;
-  gap: 18px;
-  padding: 19px 9px 19px 18px;
-  background-color: red;
-} */
+.postContent {
+  border-radius: 12px;
+}
 
 
 @media (max-width: 991px) {
@@ -119,14 +116,14 @@
 
 .postHeader {
   display: flex;
-  flex-direction: row;
-  flex-grow: 2;
-  flex-basis: 0;
+  flex-direction: row;  
+  gap: 20px;
   width: 34.7rem;
   flex-wrap: wrap;
   height: 250px;
-  /* background-color:greenyellow; */
+  /* background-color:rgb(47, 127, 255); */
   margin: 15px;
+  position: relative;
 }
 
 @media (max-width: 991px) {
@@ -181,8 +178,8 @@
 .postBody {
   /* background-color:aqua; */
   display: flex;
-  flex-direction: row;
-  width: 100%;
+  flex-direction: column;
+  width: 101%;
   height: 210px;
 }
 
@@ -192,13 +189,6 @@
   }
 }
 
-.postImageColumn {
-  gap: 20px;
-  display: flex;
-  /* background-color: violet; */
-  width: 525px;
-  z-index: 10;
-}
 
 @media (max-width: 991px) {
   .postLayout {
@@ -208,15 +198,13 @@
   }
 }
 
-/* .postImageColumn {
+.postImageColumn {
   display: flex;
-  flex-direction: row;
-  background-color: cadetblue;
-  height: 200px;
-  width: 200px;
+  /* background-color: cadetblue; */
+  height: 260px;
   align-items: center;
-  overflow: scroll;
-} */
+  justify-content: center;
+}
 
 @media (max-width: 991px) {
   .postImageColumn {
@@ -245,7 +233,8 @@
   display: flex;
   flex-direction: column;
   line-height: normal;
-  width: 56%;
+  width: 50%;
+  flex-wrap: nowrap;
   margin-left: 15px;
   /* background-color: tomato; */
 }
@@ -391,6 +380,7 @@
 }
 
 
+
 /* mediaquerries*/
 @media screen and (min-width: 1536px) {    /* For 15 inch laptops*/ 
   .feedContainer {
@@ -422,7 +412,7 @@
   }
   .postImageColumn {
     width: 50%;
-    margin-left: -10px;
+    margin-left: 10px;
   }
   .postImage {
     height: 250px;
@@ -527,8 +517,9 @@
   }
   .postContent {
     display: flex;
-    width: 100%;
+    width: 96%;
     gap: 0px;
+    /* background-color: chocolate; */
     height: 300px;
     padding: 18px 10px 20px 20px;
   }
@@ -544,7 +535,7 @@
   }
   .postImageColumn {
     width: 50%;
-    margin-left: -10px;
+    margin-left: 10px;
   }
   .postImage {
     height: 250px;
@@ -607,6 +598,14 @@
     width: 94%;
   }
   
+  .postTitle {
+    width: 17.3rem;
+    margin-left: 10px;
+   }
+   .postDescription {
+     width: 17.3rem; 
+     margin-left: 10px; 
+   }
   .postActions {
     display: flex;
     flex-direction: row;
@@ -627,6 +626,7 @@
     cursor: pointer;
   }
   
+
   .actionCount {
     color: #fff;
     font-family: Poppins, sans-serif;
@@ -665,55 +665,61 @@
 
   .postImage {
     aspect-ratio: 0.97;
-    flex-grow: 0;
-    height: auto;
+    height: 100%;
     opacity: 1;
-    margin-left: 50px;
-    width: 300px;
-    height: 260px;
-    order: 1; 
+    width: 320px;
+
   }
 
   .postContent {
-    width: 80%;
-    order: 2; 
+    width: 95.3%;
+    /* background-color: chocolate; */
+    flex-direction: row;
   }
 
   .postHeader {
     width: 100%;
-    height: auto;
+    height: 100%;
     margin: 0.5rem;
   }
 
   .postBody {
     height: auto;
-    flex-direction: column;
+    margin-left: -10px;
+    flex-direction: row;
+    /* background-color: brown; */
+
   }
 
   .postImageColumn {
-    width: 100%;
-    justify-content: center;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 0px;
   }
 
   .postDetailsColumn {
-    width: 100%;
-    margin-left: 0;
+    width: 50%;
+    margin-left: 5px;
     margin-top: 0.5rem;
   }
+
   .postTitle {
-   width: 32.5rem;
-   margin-left: 10px;
-  }
-  .postDescription {
-    width: 32.5rem; 
-    margin-left: 10px; 
-  }
+    width: 17.3rem;
+    margin-left: 10px;
+   }
+   .postDescription {
+     width: 17.3rem; 
+     margin-left: 10px; 
+   }
+  
   .postActions {
     flex-direction: row;
     justify-content: space-between;
-    margin: 0.5rem 15px;
-    order: 3;
+    margin: 0rem 1rem 1rem 1.2rem;
+    gap: 0px;
   }
+
+  
 }
 
 @media screen and (max-width: 1280px) {    /* For 13 inch laptops*/ 
@@ -742,11 +748,11 @@
     flex-direction: column;
   }
   .postTitle {
-   width: 37rem;
+   width: 17.3rem;
    margin-left: 10px;
   }
   .postDescription {
-    width: 37rem; 
+    width: 17.3rem; 
     margin-left: 10px; 
   }
 }
