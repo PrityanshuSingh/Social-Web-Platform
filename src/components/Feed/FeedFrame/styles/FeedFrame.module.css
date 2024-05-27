@@ -1,4 +1,4 @@
-@import "../../../../Global.css";
+@import "../../../../global.css";
 
 
 .feedContainer {
@@ -9,14 +9,10 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  top:0;
-  width:43rem;
-  background-color: lightpink;
+  /* background-color: lightpink; */
   height: 88.5vh;
   flex-direction: row;
   padding: 1rem 1rem 1rem 1rem;
-  /* background-color:firebrick;
-  opacity: .5; */
   overflow: auto;
 
 }
@@ -39,3 +35,98 @@
   }
 }
 
+@media screen and (min-width: 1536px) {    /* For 15 inch laptops*/ 
+  .feedContainer {
+    width: 48.8rem;
+    height: 45rem;
+  }
+}
+@media screen and (max-width: 1536px) and (min-width: 1280px) {    /* For 15 inch laptops*/ 
+  .feedContainer {
+    width: 52.2rem;
+    height: 45rem;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1320px) {    /* For 14 inch laptops*/ 
+  .feedContainer {
+    width: 40rem;
+    margin-left: 30px;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {    /* For 13 inch laptops*/ 
+  .feedContainer {
+    width: 41rem;
+    margin-left: 30px;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1080px) {    /* For 13 inch laptops*/ 
+  .feedContainer {
+    width: 32rem;
+    margin-left: 30px;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 960px) {    /* For small inch laptops*/ 
+  .feedContainer {
+    width: 34rem;
+    margin-left: 30px;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {    /* For Large Tablets*/
+  .feedContainer {
+    width: 30rem;
+    padding: 0.5rem;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {    /* For Tablets*/
+.feedContainer {
+  width: 39rem;
+  padding: 0.5rem;
+  margin-left: 0px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 700px) {    /* For Tablets*/
+.feedContainer {
+  width: 35rem;
+  }
+}
+
+@media screen and (max-width: 600px) {    /* For small Tablets*/
+.feedContainer {
+  width: 30rem;
+  padding: 0.5rem;
+  margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 426px) {  /* For large mobile device*/
+  .feedContainer{
+    width: 21.3rem;
+    padding-left: 0.5;
+  }
+}
+@media screen and (max-width: 415px) {  /* For medium-large mobile device*/
+  .feedContainer{
+    width: 21rem;
+  }
+}
+@media screen and (max-width: 376px) {  /* For medium mobile device*/
+  .feedContainer{
+    width: 18.8rem;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 320px) {  /* For small mobile */
+  .feedContainer{
+    max-width: 15.6rem;
+  }
+}
