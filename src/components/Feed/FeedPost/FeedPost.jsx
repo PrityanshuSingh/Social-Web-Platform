@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PostCard from "../PostCard/PostCard";
 import Post from "./styles/FeedPost.module.css";
-import TestFeed from "../../../data/TestFeed.json";
+import TestFeed from "../../../testdata/TestFeed.json";
 
 function FeedPost() {
   const [posts, setPosts] = useState(TestFeed);
