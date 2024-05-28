@@ -1,58 +1,58 @@
-{
-    "event": [
-        {
-            "id": 1,
-            "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/c0dbfc706a3b59f104596e0bfc6d39a7890b1f8d2eda8dcc5bb6d02ff22235ab?apiKey=4aa0ae1a0e814437847f3f8ff6c4ef38&",
-            "title": "Kivera1",
-            "organization": "Org.",
-            "description":
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-            "date": "Date: 20 Jan 2024"
-        },
-        {
-            "id": 2,
-            "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/c0dbfc706a3b59f104596e0bfc6d39a7890b1f8d2eda8dcc5bb6d02ff22235ab?apiKey=4aa0ae1a0e814437847f3f8ff6c4ef38&",
-            "title": "Kivera2",
-            "organization": "Org.",
-            "description":
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-            "date": "Date: 20 Jan 2024"
-        },
-        {
-            "id": 3,
-            "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/c0dbfc706a3b59f104596e0bfc6d39a7890b1f8d2eda8dcc5bb6d02ff22235ab?apiKey=4aa0ae1a0e814437847f3f8ff6c4ef38&",
-            "title": "Kivera3",
-            "organization": "Org.",
-            "description":
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-            "date": "Date: 20 Jan 2024"
-        },
-        {
-            "id": 4,
-            "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/c0dbfc706a3b59f104596e0bfc6d39a7890b1f8d2eda8dcc5bb6d02ff22235ab?apiKey=4aa0ae1a0e814437847f3f8ff6c4ef38&",
-            "title": "Kivera4",
-            "organization": "Org.",
-            "description":
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-            "date": "Date: 20 Jan 2024"
-        },
-        {
-            "id": 5,
-            "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/c0dbfc706a3b59f104596e0bfc6d39a7890b1f8d2eda8dcc5bb6d02ff22235ab?apiKey=4aa0ae1a0e814437847f3f8ff6c4ef38&",
-            "title": "Kivera5",
-            "organization": "Org.",
-            "description":
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-            "date": "Date: 20 Jan 2024"
-        },
-        {
-            "id": 6,
-            "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/c0dbfc706a3b59f104596e0bfc6d39a7890b1f8d2eda8dcc5bb6d02ff22235ab?apiKey=4aa0ae1a0e814437847f3f8ff6c4ef38&",
-            "title": "Kivera6",
-            "organization": "Org.",
-            "description":
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-            "date": "Date: 20 Jan 2024"
-        }
-    ]
-}
+[
+    
+    {
+        "id": 1,
+        "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/c0dbfc706a3b59f104596e0bfc6d39a7890b1f8d2eda8dcc5bb6d02ff22235ab?apiKey=4aa0ae1a0e814437847f3f8ff6c4ef38&",
+        "title": "Kivera1",
+        "organization": "Org.",
+        "description":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+        "date": "Date: 20 Jan 2024"
+    },
+    {
+        "id": 2,
+        "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/c0dbfc706a3b59f104596e0bfc6d39a7890b1f8d2eda8dcc5bb6d02ff22235ab?apiKey=4aa0ae1a0e814437847f3f8ff6c4ef38&",
+        "title": "Kivera2",
+        "organization": "Org.",
+        "description":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+        "date": "Date: 20 Jan 2024"
+    },
+    {
+        "id": 3,
+        "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/c0dbfc706a3b59f104596e0bfc6d39a7890b1f8d2eda8dcc5bb6d02ff22235ab?apiKey=4aa0ae1a0e814437847f3f8ff6c4ef38&",
+        "title": "Kivera3",
+        "organization": "Org.",
+        "description":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+        "date": "Date: 20 Jan 2024"
+    },
+    {
+        "id": 4,
+        "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/c0dbfc706a3b59f104596e0bfc6d39a7890b1f8d2eda8dcc5bb6d02ff22235ab?apiKey=4aa0ae1a0e814437847f3f8ff6c4ef38&",
+        "title": "Kivera4",
+        "organization": "Org.",
+        "description":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+        "date": "Date: 20 Jan 2024"
+    },
+    {
+        "id": 5,
+        "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/c0dbfc706a3b59f104596e0bfc6d39a7890b1f8d2eda8dcc5bb6d02ff22235ab?apiKey=4aa0ae1a0e814437847f3f8ff6c4ef38&",
+        "title": "Kivera5",
+        "organization": "Org.",
+        "description":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+        "date": "Date: 20 Jan 2024"
+    },
+    {
+        "id": 6,
+        "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/c0dbfc706a3b59f104596e0bfc6d39a7890b1f8d2eda8dcc5bb6d02ff22235ab?apiKey=4aa0ae1a0e814437847f3f8ff6c4ef38&",
+        "title": "Kivera6",
+        "organization": "Org.",
+        "description":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+        "date": "Date: 20 Jan 2024"
+    }
+    
+]

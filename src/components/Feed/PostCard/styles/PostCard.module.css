@@ -1,0 +1,1083 @@
+@import "../../../../Global.css";
+
+.postCard {
+  border-radius: 12px;
+  background: linear-gradient(330deg, rgba(66, 80, 136, 0.2) 10%, rgba(0, 0, 0, 0.5) 90%);
+  border: 1px solid rgba(255, 255, 255, 0.418);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  display: flex;
+  width: 100%;
+  height: 300.06px;
+  gap: 0px;
+  /* background-color: purple; */
+  flex-direction: row;
+  justify-content: baseline;
+  flex-grow: 1;
+  flex-basis: 0;
+  flex-wrap: wrap;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+
+@media (max-width: 991px) {
+  .postCard {
+    max-width: 100%;
+  }
+}
+
+.postContent {
+  border-radius: 12px;
+}
+
+
+@media (max-width: 991px) {
+  .postContent {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+.postHeader {
+  display: flex;
+  flex-direction: row;  
+  gap: 20px;
+  width: 34.7rem;
+  flex-wrap: wrap;
+  height: 250px;
+  /* background-color:rgb(47, 127, 255); */
+  margin: 15px;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  .postHeader {
+    max-width: 100%;
+  }
+}
+
+.userInfo {
+  align-self: start;
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  width: 100%;
+  white-space: nowrap;
+  /* background-color: green; */
+  margin-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+  .userInfo {
+    white-space: initial;
+  }
+}
+
+.userAvatar {
+  aspect-ratio: 1.02;
+  object-fit: auto;
+  object-position: center;
+  width: 32px;
+  stroke-width: 1px;
+  border-color: rgba(160, 152, 152, 1);
+  border-style: solid;
+  border-width: 1px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  height: 32px;
+}
+
+.username {
+  font-family: Poppins, sans-serif;
+  align-self: start;
+  flex-grow: 1;
+  text-align: left;
+  margin-top: 4px;
+  flex-basis: auto;
+  /* background-color: red; */
+}
+
+.postBody {
+  /* background-color:aqua; */
+  display: flex;
+  flex-direction: column;
+  width: 101%;
+  height: 210px;
+}
+
+@media (max-width: 991px) {
+  .postBody {
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .postLayout {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+  }
+}
+
+.postImageColumn {
+  display: flex;
+  /* background-color: cadetblue; */
+  height: 260px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 991px) {
+  .postImageColumn {
+    width: 100%;
+  }
+}
+
+.postImage {
+  aspect-ratio: 0.97;
+  object-fit:cover;
+  object-position: center;
+  flex-grow: 1;
+  height: 100%;
+  /* background-color: chocolate; */
+  opacity: 1;
+  width: 100%; /* Add this line */
+}
+
+@media (max-width: 991px) {
+  .postImage {
+    margin-top: 17px;
+  }
+}
+
+.postDetailsColumn {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+  flex-wrap: nowrap;
+  margin-left: 15px;
+  /* background-color: tomato; */
+}
+
+@media (max-width: 991px) {
+  .postDetailsColumn {
+    width: 100%;
+  }
+}
+
+.postDetails {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  gap: 0px;
+  text-align: left;
+  font-weight: 400;
+}
+
+@media (max-width: 991px) {
+  .postDetails {
+    margin-top: 17px;
+  }
+}
+
+.postTitle {
+  border-radius: 12px;
+  border-color: rgba(163, 173, 208, 1);
+  border-style: solid;
+  border-width: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: start;
+  color: #f5f5f5;
+  justify-content: center;
+  padding: 10px 10px;
+  font: 500 16px Poppins, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .postTitle {
+    padding-right: 20px;
+  }
+}
+
+.postDescription {
+  font-family: Poppins, sans-serif;
+  border-radius: 12px;
+  border-color: rgba(163, 173, 208, 1);
+  border-style: solid;
+  border-width: 1px;
+  height: 105px;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  background-color: #c6d9e6;
+  margin-top: 10px;
+  color: #2b304d;
+  padding: 10px 10px 5px;
+}
+
+.postDescription:hover{
+  cursor: pointer;
+}
+
+.postDescription::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.postDescription:hover::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  transition: .2s linear;
+}
+
+.postDescription::-webkit-scrollbar-thumb {
+  border-radius: 22px;
+  border: 1px solid rgba(133, 133, 133, 1);
+}
+
+
+.postTags {
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  /* background-color: chartreuse; */
+  padding: 10px 10px 6px;
+}
+
+
+.postActions {
+  display: flex;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;  
+  justify-content: space-between;
+  align-items: center;  
+  margin: 15px 10px 10px -2px;
+  /* background-color: royalblue; */
+  position: relative;
+}
+
+.actionIcon {
+  aspect-ratio: 1.02;
+  object-fit: auto;
+  object-position: center;
+  width: 34px;
+  margin-top: 0px;
+  /* background-color: #d9d9d9; */
+  cursor: pointer;
+}
+
+.actionCount{
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  margin-top: -15px;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top:0px; 
+  right:30px;
+  height: 120px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:30px;
+  background-color: rgba(0, 0, 0, 1);
+  border: 1px solid #ccc;
+  border-radius: 13px 12px 13px 13px;
+  padding: 10px 5px 10px 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  transition: 0.3s linear;
+  backdrop-filter: blur(10px);
+  transform: translateX(0%);
+  cursor: pointer;
+}
+
+.dropdownMenu:hover {
+  background-color: rgba(32, 31, 31, 0.9);
+}
+
+
+
+/* mediaquerries*/
+@media screen and (min-width: 1536px) {    /* For 15 inch laptops*/ 
+  .feedContainer {
+    width: 52rem;
+  }
+  .postList {
+    width: 52rem;
+  }
+  .postCard {
+    width: 48rem;
+    height: 380px;
+  }
+  .postContent {
+    display: flex;
+    width: 100%;
+    gap: 0px;
+    height: 300px;
+    padding: 18px 10px 20px 20px;
+  }
+  .postHeader {
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+  }
+  .userInfo {
+    margin-top: -12px;
+    margin-left: -10px;
+    margin-bottom: -30px;;
+  }
+  .postImageColumn {
+    width: 50%;
+    margin-left: 10px;
+  }
+  .postImage {
+    height: 250px;
+    border-radius: 13px;
+    width: 300px; 
+  }
+  
+  .postDetailsColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 100%;
+    margin-left: 15px;
+    /* background-color: tomato; */
+  }
+  
+  @media (max-width: 991px) {
+    .postDetailsColumn {
+      width: 100%;
+    }
+  }
+  
+  .postDetails {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 10px;
+    text-align: left;
+    font-weight: 400;
+  }
+  
+  @media (max-width: 991px) {
+    .postDetails {
+      margin-top: 17px;
+    }
+  }
+  
+  .postTitle {
+    border-radius: 12px;
+    border-color: rgba(163, 173, 208, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: start;
+    color: #f5f5f5;
+    justify-content: center;
+    padding: 10px 10px;
+    width: 95%;
+    font: 500 16px Poppins, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .postTitle {
+      padding-right: 20px;
+    }
+  }
+  
+  .postDescription {
+    height: 125px;
+    width: 94%;
+  }
+  
+  .postActions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 116px;
+    margin: 0px 10px 10px 15px;
+    position: relative;
+  }
+  
+  .actionIcon {
+    aspect-ratio: 1.02;
+    object-fit: auto;
+    object-position: center;
+    width: 34px;
+    margin-top: 0px;
+    /* background-color: #d9d9d9; */
+    cursor: pointer;
+  }
+  
+  .actionCount {
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    margin-left: 5px; /* add some left margin to separate from the icon */
+    line-height: 34px; /* align vertically with the icons */
+  }
+}
+
+@media screen and (max-width: 1536px) and (min-width: 1280px) {    /* For 15 inch laptops*/ 
+  .feedContainer {
+    width: 40rem;
+  }
+  .postList {
+    width: 52rem;
+  }
+  .postCard {
+    width: 48rem;
+    height: 380px;
+  }
+  .postContent {
+    display: flex;
+    width: 96%;
+    gap: 0px;
+    /* background-color: chocolate; */
+    height: 300px;
+    padding: 18px 10px 20px 20px;
+  }
+  .postHeader {
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+  }
+  .userInfo {
+    margin-top: -12px;
+    margin-left: -10px;
+    margin-bottom: -30px;;
+  }
+  .postImageColumn {
+    width: 50%;
+    margin-left: 10px;
+  }
+  .postImage {
+    height: 250px;
+    border-radius: 13px;
+    width: 300px; 
+  }
+  
+  .postDetailsColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 100%;
+    margin-left: 15px;
+    /* background-color: tomato; */
+  }
+  
+  @media (max-width: 991px) {
+    .postDetailsColumn {
+      width: 100%;
+    }
+  }
+  
+  .postDetails {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 10px;
+    text-align: left;
+    font-weight: 400;
+  }
+  
+  @media (max-width: 991px) {
+    .postDetails {
+      margin-top: 17px;
+    }
+  }
+  
+  .postTitle {
+    border-radius: 12px;
+    border-color: rgba(163, 173, 208, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: start;
+    color: #f5f5f5;
+    justify-content: center;
+    padding: 10px 10px;
+    width: 95%;
+    font: 500 16px Poppins, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .postTitle {
+      padding-right: 20px;
+    }
+  }
+  
+  .postDescription {
+    height: 125px;
+    width: 94%;
+  }
+  
+  .postTitle {
+    width: 17.3rem;
+    margin-left: 10px;
+   }
+   .postDescription {
+     width: 17.3rem; 
+     margin-left: 10px; 
+   }
+  .postActions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 116px;
+    margin: 0px 10px 10px 15px;
+    position: relative;
+  }
+  
+  .actionIcon {
+    aspect-ratio: 1.02;
+    object-fit: auto;
+    object-position: center;
+    width: 34px;
+    margin-top: 0px;
+    /* background-color: #d9d9d9; */
+    cursor: pointer;
+  }
+  
+
+  .actionCount {
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    margin-left: 5px; /* add some left margin to separate from the icon */
+    line-height: 34px; /* align vertically with the icons */
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1320px) {    /* For 14 inch laptops*/ 
+  
+  .feedContainer {
+    width: 40rem;
+    margin-left: 30px;
+    padding: 0.5rem;
+  }
+  .feedTitle {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+  }
+  .postList {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-right: 0;
+  }
+
+  .postCard {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-left: 0px;
+    padding-right: 10px;
+    flex-direction: column;
+  }
+
+  .postImage {
+    aspect-ratio: 0.97;
+    height: 100%;
+    opacity: 1;
+    width: 320px;
+
+  }
+
+  .postContent {
+    width: 95.3%;
+    /* background-color: chocolate; */
+    flex-direction: row;
+  }
+
+  .postHeader {
+    width: 100%;
+    height: 100%;
+    margin: 0.5rem;
+  }
+
+  .postBody {
+    height: auto;
+    margin-left: -10px;
+    flex-direction: row;
+    /* background-color: brown; */
+
+  }
+
+  .postImageColumn {
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  .postDetailsColumn {
+    width: 50%;
+    margin-left: 5px;
+    margin-top: 0.5rem;
+  }
+
+  .postTitle {
+    width: 17.3rem;
+    margin-left: 10px;
+   }
+   .postDescription {
+     width: 17.3rem; 
+     margin-left: 10px; 
+   }
+  
+  .postActions {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0rem 1rem 1rem 1.2rem;
+    gap: 0px;
+  }
+
+  
+}
+
+@media screen and (max-width: 1280px) {    /* For 13 inch laptops*/ 
+  .feedContainer {
+    width: 41rem;
+    margin-left: 30px;
+    padding: 0.5rem;
+  }
+  .feedTitle {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+  }
+  .postList {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-right: 0;
+  }
+
+  .postCard {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-left: 0px;
+    flex-direction: column;
+  }
+  .postTitle {
+   width: 17.3rem;
+   margin-left: 10px;
+  }
+  .postDescription {
+    width: 17.3rem; 
+    margin-left: 10px; 
+  }
+}
+
+@media screen and (max-width: 1080px) {    /* For 13 inch laptops*/ 
+  .feedContainer {
+    width: 32rem;
+    margin-left: 30px;
+    padding: 0.5rem;
+  }
+  .feedTitle {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+  }
+  .postList {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-right: 0;
+  }
+
+  .postCard {
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin-left: 0px;
+    flex-direction: column;
+  }
+
+  .postImage {
+    aspect-ratio: 0.97;
+    flex-grow: 0;
+    height: auto;
+    opacity: 1;
+    margin-left: 50px;
+    width: 300px;
+    height: 260px;
+    order: 1; 
+  }
+
+  .postContent {
+    width: 80%;
+    order: 2; 
+  }
+
+  .postHeader {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem;
+  }
+
+  .postBody {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .postImageColumn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .postDetailsColumn {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+  .postTitle {
+   width: 25rem;
+   margin-left: 10px;
+  }
+  .postDescription {
+    width: 25rem; 
+    margin-left: 10px; 
+  }
+  .postActions {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5rem 15px;
+    order: 3;
+  }
+
+}
+
+@media screen and (max-width: 960px) {    /* For small inch laptops*/ 
+  .feedContainer {
+    width: 34rem;
+    margin-left: 30px;
+    padding: 0.5rem;
+  }
+  .feedTitle {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+  }
+  .postList {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-right: 0;
+  }
+
+  .postCard {
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin-left: 0px;
+    flex-direction: column;
+  }
+
+  .postImage {
+    aspect-ratio: 0.97;
+    flex-grow: 0;
+    height: auto;
+    opacity: 1;
+    margin-left: 50px;
+    width: 300px;
+    height: 260px;
+    order: 1; 
+  }
+
+  .postContent {
+    width: 80%;
+    order: 2; 
+  }
+
+  .postHeader {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem;
+  }
+
+  .postBody {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .postImageColumn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .postDetailsColumn {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+  .postTitle {
+   width: 27.6rem;
+   margin-left: 8px;
+  }
+  .postDescription {
+    width: 28.2rem; 
+    margin-left: 8px; 
+  }
+  .postActions {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5rem 15px;
+    order: 3;
+  }
+
+}
+
+@media screen and (max-width: 800px) {    /* For Large Tablets*/
+  .feedContainer {
+    width: 30rem;
+    padding: 0.5rem;
+    margin-left: 0px;
+  }
+  .postTitle {
+   width: 22.5rem;
+  }
+  .postDescription {
+    width: 23rem;  
+  }
+   
+  }
+
+@media screen and (max-width: 768px) {    /* For Tablets*/
+.feedContainer {
+  width: 39rem;
+  padding: 0.5rem;
+  margin-left: 0px;
+}
+.feedTitle {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  margin-left: 12px;
+}
+.postList {
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding-right: 0;
+  align-items: center;
+}
+
+.postCard {
+  width: 90%;
+  height: auto;
+  display: flex;
+  margin-left: 0px;
+  flex-direction: column;
+}
+
+.postImage {
+  aspect-ratio: 0.97;
+  flex-grow: 0;
+  height: auto;
+  opacity: 1;
+  margin-left: 50px;
+  width: 300px;
+  height: 260px;
+  order: 1; 
+}
+
+.postContent {
+  width: 80%;
+  order: 2; 
+}
+
+.postHeader {
+  width: 100%;
+  height: auto;
+  margin: 0.5rem;
+}
+
+.postBody {
+  height: auto;
+  flex-direction: column;
+}
+
+.postImageColumn {
+  width: 100%;
+  justify-content: center;
+}
+
+.postDetailsColumn {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 0.5rem;
+}
+.postTitle {
+ width: 30.5rem;
+}
+.postDescription {
+  width: 31rem;  
+}
+ 
+}
+@media screen and (min-width: 600px) and (max-width: 700px) {    /* For Tablets*/
+.feedContainer {
+  width: 35rem;
+}
+
+.postTitle {
+ width: 27.0rem;
+}
+.postDescription {
+  width: 27.5rem;  
+}
+ 
+}
+
+@media screen and (max-width: 600px) {    /* For small Tablets*/
+.feedContainer {
+  width: 30rem;
+  padding: 0.5rem;
+  margin-left: 0px;
+}
+.postTitle {
+ width: 22.5rem;
+}
+.postDescription {
+  width: 23rem;  
+}
+.postActions {
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.5rem 15px;
+  order: 3; 
+}
+ 
+}
+
+@media screen and (max-width: 426px) {  /* For large mobile device*/
+  .feedContainer{
+    width: 21.3rem;
+    padding-left: 0.5;
+  }
+  .postCard {
+    width: 30rem;
+  }
+  
+  .postImageColumn {
+    width: 310px;
+  }
+  .postImage {
+    margin-left: 0;
+    width: 270px;
+    height: 240px;
+  }
+
+  .postContent {
+    width: 100%;
+  }
+  .postHeader {
+    margin: 0.8rem;
+  }
+  .postTitle {
+   width: 17.8rem;
+   margin-left: 0;
+  }
+  .postTags{
+    font-size: 13px;
+  }
+  .postDescription {
+    width: 18.4rem; 
+    margin-left: 0;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .postActions {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5rem 15px;
+    order: 3;
+  }
+}
+@media screen and (max-width: 415px) {  /* For medium-large mobile device*/
+  .feedContainer{
+    width: 21rem;
+  }
+  .postTitle {
+   width: 16rem;
+   margin-left: 0;
+  }
+  .postImageColumn{
+    width: 280px;
+  }
+  .postDescription {
+    width: 16.5rem; 
+    margin-left: 0;
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 376px) {  /* For medium mobile device*/
+  .feedContainer{
+    width: 18.8rem;
+    margin-left: 0px;
+  }
+  .postCard {
+    width: 20rem;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .postImageColumn {
+    width: 250px;
+  }
+  .postImage {
+    width: 220px;
+    height: 200px;
+    margin-left: 10px;
+  }
+  .postTitle {
+   width: 15rem;
+   margin-left: 0;
+  }
+  .postDescription {
+    width: 15.6rem; 
+    margin-left: 0;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 320px) {  /* For small mobile */
+  .feedContainer{
+    max-width: 15.6rem;
+  }
+  .postCard {
+    width: 100%;
+  }
+  .postImageColumn {
+    width: 200px;
+  }
+  .postImage {
+    width: 220px;
+    height: 240px;
+    margin-left: 16px;
+    border-radius: 13px;
+  }
+  .postHeader {
+    margin: 0.8rem;
+  }
+  .postTitle {
+   width: 11.5rem;
+  }
+  .postDescription {
+    width: 12rem; 
+    font-size: 13px;
+  }
+}

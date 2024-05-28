@@ -1,5 +1,5 @@
-import FeedFrame from "../../Feed/FeedFrame/FeedFrame";
-import CommunityFrame from "../../Community/CommunityFrame/CommunityFrame"; 
+import Feed from "../../../pages/Feed/Feed";
+import Community from "../../../pages/Community/Community"; 
 import Base from "./styles/BaseComponent.module.css";
 
 function BaseComponent(path) {
@@ -7,13 +7,13 @@ function BaseComponent(path) {
 
   switch (path.path) {
     case '/feed':
-      ComponentToRender = <FeedFrame />;
+      ComponentToRender = <Feed />;
       break;
     case '/community':
-      ComponentToRender = <CommunityFrame />;
+      ComponentToRender = <Community />;
       break;
     default:
-      ComponentToRender = <FeedFrame />;// or you can handle a not found component here
+      ComponentToRender = <Feed />;// or you can handle a not found component here
   }
 
   return (

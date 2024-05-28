@@ -1,11 +1,15 @@
-import Feedframe from "../../components/Feed/FeedFrame/FeedFrame";
+import FeedPost from "../../components/Feed/FeedPost/FeedPost";
+import Feed from "./styles/Feed.module.css";
 
-function Feed() {
+function FeedFrame() {
   return (
     <>
-      <Feedframe />
+      <div className={Feed.feedContainer}>
+        <div className={Feed.feedTitle}>Feed</div>
+        <FeedPost />
+      </div>
     </> 
   );
 }
 
-export default Feed;
+export default FeedFrame;

@@ -1,11 +1,10 @@
 import { useState } from "react";
-import Feed from "./styles/FeedPost.module.css";
-import testfeed from "../../../data/TestFeed.json";
+import PostCard from "../PostCard/PostCard";
+import Post from "./styles/FeedPost.module.css";
+import TestFeed from "../../../data/TestFeed.json";
 
-function FeedFrame() {
-
-  const [posts, setPosts] = useState(testfeed);
-  const [showDropdown, setShowDropdown] = useState(false);
+function FeedPost() {
+  const [posts, setPosts] = useState(TestFeed);
 
   // useEffect(() => {
   //   // Fetch data from the test JSON file
@@ -21,13 +20,6 @@ function FeedFrame() {
   //     console.error("Error fetching posts:", error);
   //   }
   // };
-
-  const handleSetting = (postId) => {
-    setShowDropdown((prev) => ({
-      ...prev,
-      [postId]: !prev[postId]
-    }));
-  };
 
   const handleLike = async (postId) => {
     try {
@@ -122,106 +114,20 @@ function FeedFrame() {
   // };
 
   return (
-    <div>
-      <div className={Feed.postContainer}>
-        <div className={Feed.postList}>
-          {posts.map((post) => (
-            <div key={post.id} className={Feed.postCard}>
-              <div className={Feed.postContent}>
-                <div className={Feed.postHeader}>
-                
-                  {/*User Info*/}
-                  <div className={Feed.userInfo}>
-                    <img
-                      loading="lazy"
-                      src={post.user.avatar}
-                      className={Feed.userAvatar}
-                    />
-                    <div className={Feed.username}>{post.user.username}</div>
-                  </div>
-
-                  <div className={Feed.postBody}>
-
-                    {/*Post Image*/}
-                    <div className={Feed.postImageColumn}>
-                   
-                        <img
-                          loading="lazy"
-                          src={post.image}
-                          className={Feed.postImage}
-                        />
-                    </div>
-
-                    {/*Post title and description*/}
-                    <div className={Feed.postDetailsColumn}>
-                      <div className={Feed.postDetails}>
-                        <div className={Feed.postTitle}>{post.title}</div>
-                          <div className={Feed.postDescription}>
-                            {post.description}
-                          </div>
-                          <div className={Feed.postTags}>{post.tags.join(" ")}</div>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-                {/* Post icon Actions */}
-                <div className={Feed.postActions}>
-                  <img
-                  loading="lazy"
-                  src="assets/comment.svg"
-                    className={Feed.actionIcon}
-                    onClick={() => handleComment(post.id, "New comment")}
-                  />
-                  <img
-                    loading="lazy"
-                    src="assets/like.svg"
-                    className={Feed.actionIcon}
-                    onClick={() => handleLike(post.id)}
-                  />
-                  <div className={Feed.actionCount}>{post.likes}</div>
-
-                  <img
-                    loading="lazy"
-                    src="assets/share.svg"
-                    className={Feed.actionIcon}
-                    onClick={() => handleShare(post.id)}
-                  />
-                  <div className={Feed.actionCount}>{post.shares}</div>
-
-                  {/* Dropdown menu */}
-                  {showDropdown[post.id] && (
-                    <div className={Feed.dropdownMenu}>
-                      <div
-                        className={Feed.dropdownItem}
-                        onClick={() => console.log("Report")}
-                      >
-                        Report
-                      </div>
-                      <div
-                        className={Feed.dropdownItem}
-                        onClick={() => console.log("Save")}
-                      >
-                        Save
-                      </div>
-                    </div>
-                  )}
-                  
-                  <img
-                    loading="lazy"
-                    src="assets/threedots.svg"
-                    className={Feed.actionIcon}
-                    onClick={() => handleSetting(post.id)}
-                  />
-                </div>
-              </div>
-          ))}
-        </div>
+    <div className={Post.postContainer}>
+      <div className={Post.postList}>
+        {posts.map((post) => (
+          <PostCard
+            key={post.id}
+            post={post}
+            handleComment={handleComment}
+            handleLike={handleLike}
+            handleShare={handleShare}
+          />
+        ))}
       </div>
     </div>
   );
 }
 
-export default FeedFrame;
+export default FeedPost;

@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
-import EventCard from "./EventCard";
-import { event } from "../../../data/TestEvent.json";
+import EventCard from "../../../components/Event/EventCard";
+import EventData from "../../../data/TestEvent.json";
 import EventBar from "./styles/EventBar.module.css";
 
 function EventsPage() {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [events, setEvents] = useState(EventData);
 
   const toggleEventBar = () => {
     setIsOpen(!isOpen);
@@ -43,7 +44,7 @@ function EventsPage() {
           <h1 className={EventBar.eventsTitle}>Events</h1>
           <div className={EventBar.eventsListWrapper}>
             <div className={EventBar.eventsList}>
-              {event.map((event) => (
+              {events.map((event) => (
                 <EventCard key={event.id} event={event} />
               ))}
             </div>

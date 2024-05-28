@@ -1,0 +1,61 @@
+{
+  "channelGroups": [
+    {
+      "id": 1,
+      "title": "Tech Channels",
+      "channels": [
+        {
+          "id": 1,
+          "imageUrl": "https://uploads-ssl.webflow.com/645fbc01f38b6fb6255c240c/6608c51c9db08fa48e54365b_cutedog.png",
+          "title": "Artificial Intelligence"
+        },
+        {
+          "id": 2,
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/ca11fb9bf28f3e91f3fa518a420de6b22bcbe6bef953bfb9651afe9f5a9f2e3c?apiKey=4aa0ae1a0e814437847f3f8ff6c4ef38",
+          "title": "Web Development"
+        },
+        {
+          "id": 3,
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/c9870b81c215d8dba9cfd6af2fd692cfc16e736f0a4f8d8bce086182464a100e?apiKey=4aa0ae1a0e814437847f3f8ff6c4ef38",
+          "title": "Data Structures(DSA)"
+        },
+        {
+          "id": 4,
+          "imageUrl": "https://uploads-ssl.webflow.com/645fbc01f38b6fb6255c240c/6608c51c9db08fa48e54365b_cutedog.png",
+          "title": "Artificial Intelligence"
+        },
+        {
+          "id": 5,
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/ca11fb9bf28f3e91f3fa518a420de6b22bcbe6bef953bfb9651afe9f5a9f2e3c?apiKey=4aa0ae1a0e814437847f3f8ff6c4ef38",
+          "title": "Web Development"
+        },
+        {
+          "id": 6,
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/c9870b81c215d8dba9cfd6af2fd692cfc16e736f0a4f8d8bce086182464a100e?apiKey=4aa0ae1a0e814437847f3f8ff6c4ef38",
+          "title": "Data Structures(DSA)"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Meme Channels",
+      "channels": [
+        {
+          "id": 4,
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/f9e3dfa1e6c5c0d77f383fe8a127ba9e93e00fa9bec12ed5042c23027e4bacf6?apiKey=4aa0ae1a0e814437847f3f8ff6c4ef38",
+          "title": "KIIT Memes"
+        },
+        {
+          "id": 5,
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/f5ed4a94b51d88fd013be6a77dc9f620f6dfd5b56371f0d62f08196ca23217fa?apiKey=4aa0ae1a0e814437847f3f8ff6c4ef38",
+          "title": "Trending Memes"
+        },
+        {
+          "id": 6,
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/147435bdc267260ad5e18d75c8c5fa43efd5588a77549152337a7d99218a7108?apiKey=4aa0ae1a0e814437847f3f8ff6c4ef38",
+          "title": "Classic Memes"
+        }
+      ]
+    }
+  ]
+}

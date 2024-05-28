@@ -11,7 +11,7 @@ import {
 // import MobileNav from "./components/header/MobileHeader";
 
 // // pages
-const MainFrame = React.lazy(() => import("./pages/MainFrame/MainFrame"));
+const AfterLogin = React.lazy(() => import("./pages/AfterLogin/AfterLogin"));
 // const About = React.lazy(() => import("./pages/About/About"));
 // const Contact = React.lazy(() => import("./pages/Contact/Contact"));
 // const EventCards = React.lazy(() => import("./components/EventCards/EventCards"));
@@ -37,7 +37,7 @@ function App() {
               path="/feed"
               element={
                 <Suspense fallback={<Loading />}>
-                  <MainFrame path="/feed" />
+                  <AfterLogin path="/feed" />
                 </Suspense>
               }
             />
@@ -46,7 +46,7 @@ function App() {
               path="/community"
               element={
                 <Suspense fallback={<Loading />}>
-                  <MainFrame path="/community" />
+                  <AfterLogin path="/community" />
                 </Suspense>
               }
             />
@@ -55,7 +55,7 @@ function App() {
               path="/"
               element={
                 <Suspense fallback={<Loading />}>
-                  <MainFrame path="/" />
+                  <AfterLogin path="/" />
                 </Suspense>
               }
             />

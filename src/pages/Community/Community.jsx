@@ -1,11 +1,16 @@
-import CommunityFrame from "../../components/Community/CommunityFrame/CommunityFrame";
+import CommunityChannel from "../../components/Community/CommunityChannel/CommunityChannel";
+import Community from "./styles/Community.module.css";
 
-function Feed() {
-  return (
-    <>
-      <CommunityFrame />
+function CommunityFrame() {
+    return (
+      <>
+      <div className={Community.communityContainer}>
+        <div className={Community.communityTitle}>Community</div>
+        <CommunityChannel />
+      </div>
     </> 
-  );
-}
-
-export default Feed;
+    );
+  }
+  
+  export default CommunityFrame;
+  
