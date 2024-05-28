@@ -1,6 +1,6 @@
-## Beta Overview
+## Overview
 
-Testing issues and updating new features in beta before deployment. All the branches are first merged in beta, tested and varified by the collaborators and then goes for deployment.
+This platform serves as a tailored space to streamline communication and collaboration within the academic community. Specifically designed for college students, faculty, and affiliated societies, it facilitates the dissemination of crucial information such as upcoming events, notices, announcements, and other relevant communications.
 
 ## Features
 
@@ -85,6 +85,6 @@ Here are some screenshots showcasing the features of [Social Media Platform]:
 
 ## Connect with Us
 
-Feel free to explore more features and functionalities in [Social Media Platform]!
+Feel free to explore, contribute, and thrive with [Your Social Media Platform Name]!
 
 Happy Connecting! 🚀
