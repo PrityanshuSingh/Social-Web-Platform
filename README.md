@@ -1,44 +1,6 @@
-<<<<<<< HEAD
 ## Overview
-It is a dynamic and interconnected space designed to enhance your online presence in college. With a focus on thriving, connecting, and flourishing, this platform aims to provide a seamless experience for users to navigate and engage across various social media channels.
 
-## Features
-(Currently in Designing Phase) Upcoming...
-
-## Getting Started
-1. **Installation:**
-   - Clone this repository: `git clone https://github.com/your-username/your-repo.git`
-   - Navigate to the project directory: `cd your-repo`
-
-2. **Usage:**
-   - Customize the platform according to your preferences.
-   - Integrate your social media accounts through the user-friendly interface.
-
-3. **Contributing:**
-   - We welcome contributions! Fork the repository and submit a pull request with your enhancements.
-
-## Tech Stack
-- Update the technologies involved.
-
-## Dependencies
-- List any external libraries, frameworks, or tools that are required to run the platform.
-
-## License
-This project is licensed under the license (if any) - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Acknowledgments
-- Mention any contributors, libraries, or resources that inspired or were used in the development of this platform.
-
-## Connect with Us
-- [Your Website]
-- [Your Email]
-- [Social Media Handles]
-
-Feel free to explore, contribute, and thrive with [Your Social Media Platform Name]!
-=======
-## Beta Overview
-
-Testing issues and updating new features in beta before deployment. All the branches are first merged in beta, tested and varified by the collaborators and then goes for deployment.
+This platform serves as a tailored space to streamline communication and collaboration within the academic community. Specifically designed for college students, faculty, and affiliated societies, it facilitates the dissemination of crucial information such as upcoming events, notices, announcements, and other relevant communications.
 
 ## Features
 
@@ -123,7 +85,6 @@ Here are some screenshots showcasing the features of [Social Media Platform]:
 
 ## Connect with Us
 
-Feel free to explore more features and functionalities in [Social Media Platform]!
->>>>>>> features/responsiveness
+Feel free to explore, contribute, and thrive with [Your Social Media Platform Name]!
 
 Happy Connecting! 🚀
