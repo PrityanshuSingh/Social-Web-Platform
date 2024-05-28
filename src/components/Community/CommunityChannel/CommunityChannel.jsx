@@ -1,6 +1,6 @@
 // MyComponent.j
 import ChannelCard from "../ChannelCard/ChannelCard";
-import channelsData from "../../../data/TestChannel.json";
+import channelsData from "../../../testdata/TestChannel.json";
 import Channel from "./styles/CommunityChannel.module.css";
 
 function CommunityChannel() {

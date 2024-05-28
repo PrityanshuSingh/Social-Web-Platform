@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import EventCard from "../../../components/Event/EventCard";
-import EventData from "../../../data/TestEvent.json";
+import EventData from "../../../testdata/TestEvent.json";
 import EventBar from "./styles/EventBar.module.css";
 
 function EventsPage() {
