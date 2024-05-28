@@ -1,0 +1,256 @@
+@import "../../../../Global.css";
+
+.sidebarContainer {
+  justify-content: center;
+  /* background-color: red; */
+  display: flex;
+  width: 15.86rem;
+  height: 100%;
+  font-size: 32px;
+  box-sizing: border-box;
+  flex-direction: column;
+  font-size: 1rem;
+  font-family: Poppins;
+  position: relative;
+  left: 0;
+  transition: left 0.3s ease-in-out;
+}
+
+.sidebarContainer::-webkit-scrollbar{
+  width:0;
+}
+
+.sidebarContainer.open {
+  left: 0;
+}
+
+.sidebarContainer.mobile {
+  position: fixed;
+  top: 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  left: -100%;
+  z-index: 999;
+}
+
+.sidebarContainer.mobile.open {
+  left: 0;
+}
+
+.sidebarContent {
+  border-radius: 13px;
+  background-color: rgba(12, 29, 44, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.sidebarMenu {
+  flex-wrap: wrap;
+  width: 11rem;
+  align-items: center;
+  justify-content: left;
+  margin-left: 0.5rem;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font: 500 32px Poppins, sans-serif;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 0px;
+  /* background-color: cyan; */
+}
+
+.profileImageContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  width: 50%;
+  border: 2px solid rgba(241, 204, 143, 1);
+  border-radius: 60%;
+  object-fit: cover;
+  aspect-ratio: 1.1;
+  overflow: hidden;
+}
+
+.profileImage {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.profileImage:hover {
+  transition: .2s linear;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.greeting {
+  color: #fff;
+  width: 11rem;
+  text-align: center;
+  letter-spacing: 0.13px;
+  margin-top: 10%;
+  font-size: 1.2rem;
+  font-family: var(--fontPoppins);
+}
+
+.sidebarMenu {
+  flex-wrap: wrap;
+  width: 11rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-top: 5%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: flex;
+}
+
+.menuList {
+  display: flex;
+  margin-top: 10%;
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style: none;
+  font-size: 1rem;
+  padding: 0;
+  gap: 27px;
+}
+
+.menuIcon {
+  aspect-ratio: 1.1;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 85%;
+  cursor: pointer;
+  color: #fff;
+}
+
+.menuIcon:hover > svg > * {
+  fill: #ff6347;
+  transition: fill 0.3s ease;
+}
+
+.menuLink {
+  font-family: Poppins, sans-serif;
+  text-decoration: none;
+  color: inherit;
+  color: #fff;
+}
+
+.menuLink:hover {
+  color: #f1cc8f;
+  transition: 0.2s linear;
+}
+
+.menuIcon:hover {
+  color: #f1cc8f;
+  transition: 0.2s linear;
+}
+
+.menuLink:not(:first-child) {
+  margin-top: 3px;
+}
+
+/* Bottom Navbar Styles */
+.bottomNavbar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1A1D2E;
+  padding: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 999;
+}
+
+.bottomNavbarIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.bottomNavbarIcon img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1536px) {    /* For Desktop monitors*/ 
+  .sidebarContainer{
+    width: 15.4vw;
+  }
+
+}
+
+@media screen and (max-width: 1360px) {    /* For Desktop monitors*/ 
+  .sidebarContainer{
+    width: 18.3vw;
+  }
+}
+
+
+
+@media screen and (max-width: 1080px){
+  .sidebarContainer {
+    max-width: 8rem;
+    width: 6.78rem;
+    font-size: 24px;
+  }
+
+  .profileImage {
+    width: 150px;
+  }
+
+  .greeting {
+    font-size: var(--font-size-sm);
+  }
+
+  .sidebarContent {
+    padding: 1rem;
+  }
+
+  .sidebarMenu {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .menuList {
+    display: none;
+  }
+
+  .menuIcon {
+    width: 40px;
+    margin-left: 0px;
+    gap: 30px;
+  }
+}
+
+
+@media screen and (max-width: 786px) {
+  .sidebarContainer {
+    display: none;
+  }
+
+  .bottomNavbar {
+    display: flex;
+  }
+}
+
