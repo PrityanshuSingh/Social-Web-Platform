@@ -17,6 +17,7 @@
   flex-wrap: wrap;
   padding-bottom: 5px;
   position: relative;
+  /* background-color: bisque; */
 }
 
 
@@ -44,7 +45,7 @@
   gap: 20px;
   width: 34.7rem;
   flex-wrap: wrap;
-  height: 250px;
+  height: auto;
   /* background-color:rgb(47, 127, 255); */
   margin: 15px;
   position: relative;
@@ -104,7 +105,8 @@
   display: flex;
   flex-direction: column;
   width: 101%;
-  height: 210px;
+  height: 100%;
+  /* background-color: brown; */
 }
 
 @media (max-width: 991px) {
@@ -128,6 +130,7 @@
   height: 260px;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 @media (max-width: 991px) {
@@ -172,10 +175,11 @@
 .postDetails {
   display: flex;
   flex-direction: column;
-  font-size: 12px;
+  font-size: 13px;
   gap: 0px;
   text-align: left;
   font-weight: 400;
+  /* background-color: aqua; */
 }
 
 @media (max-width: 991px) {
@@ -213,9 +217,12 @@
   flex-wrap: wrap;
   overflow-y: auto;
   background-color: #c6d9e6;
+  background-color: rgba(0, 0, 0, 0.3);
   margin-top: 10px;
   color: #2b304d;
+  color: #f5f5f5;
   padding: 10px 10px 5px;
+  line-height: 2;
 }
 
 .postDescription:hover{
@@ -240,40 +247,111 @@
 
 
 .postTags {
-  color: #fff;
+  color: #f5f5f5;
   font-family: Poppins, sans-serif;
   /* background-color: chartreuse; */
-  padding: 10px 10px 6px;
+  padding: 10px 10px 5px;
+  border-radius: 12px;
+  width: 88.5%;
+  font-weight: 500;
 }
 
 
 .postActions {
   display: flex;
-  gap: 15px;
+  gap: 0px;
   display: flex;
   flex-direction: column;  
   justify-content: space-between;
   align-items: center;  
   margin: 15px 10px 10px -2px;
-  /* background-color: royalblue; */
   position: relative;
+  /* background-color: #f1cc8f; */
+}
+
+.actionIconContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .actionIcon {
-  aspect-ratio: 1.02;
-  object-fit: auto;
-  object-position: center;
-  width: 34px;
-  margin-top: 0px;
-  /* background-color: #d9d9d9; */
+  font-size: 1.5em;
   cursor: pointer;
+  margin-right: -5px;
+  margin-left: 7px;
+  background-color: transparent;
 }
+
+.actionIcon:hover {
+  color: white;
+}
+
+.actionIconLiked {
+  color: red;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-right: -5px;
+  margin-left: 7px;
+  padding: 0px 5px 0px 5px;
+}
+
+.actionIconSaved {
+  color: #f1cc8f;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-right: -5px;
+  margin-left: 7px;
+  padding: 0px 5px 0px 5px;
+}
+
+.actionIconReported {
+  color: goldenrod;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-right: -5px;
+  margin-left: 7px;
+  padding: 0px 5px 0px 5px;
+}
+
+.actionIconLiked:hover {
+  color: red;
+}
+
+/* .actionCount{
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  margin-top: 2px;
+  background-color: rgb(240, 0, 0);
+  display: flex;
+  width: 15px;
+  height: 15px;
+  border-radius: 360px;
+  margin-bottom: -10px;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px 10px 5px 5px;
+  z-index:2;
+} */
 
 .actionCount{
   color: #fff;
   font-family: Poppins, sans-serif;
   font-size: 12px;
-  margin-top: -15px;
+  margin-top: 4px;
+  margin-right: 4px;
+  display: flex;
+  width: 15px;
+  height: 15px;
+  border-radius: 360px;
+  margin-bottom: 4px;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px 10px 5px 5px;
+  z-index:2;
+  /* background-color: brown; */
 }
 
 .dropdownMenu {
@@ -581,10 +659,12 @@
 
   .postCard {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
+    /* background-color: black; */
     margin-left: 0px;
     padding-right: 10px;
+    padding-bottom: 45px;
     flex-direction: column;
   }
 
@@ -604,13 +684,15 @@
 
   .postHeader {
     width: 100%;
-    height: 100%;
+    height: 110%;
     margin: 0.5rem;
+    /* background-color: chartreuse; */
   }
 
   .postBody {
-    height: auto;
+    height: 100%;
     margin-left: -10px;
+    margin-top: 5px;
     flex-direction: row;
     /* background-color: brown; */
 
@@ -618,8 +700,10 @@
 
   .postImageColumn {
     width: 50%;
+    height: 93%;
     margin-top: 10px;
     margin-left: 0px;
+    /* background-color: blueviolet; */
   }
 
   .postDetailsColumn {
@@ -632,16 +716,32 @@
     width: 17.3rem;
     margin-left: 10px;
    }
-   .postDescription {
+
+  .postDescription {
      width: 17.3rem; 
+     height: 140px;
+     font-size: 12px;
+     line-height: 2;
      margin-left: 10px; 
-   }
-  
+  }
+
+  .postTags {
+    font-size: 13px;
+    /* background-color: #f1cc8f; */
+    align-items: center;
+    margin-top:-5px;
+    margin-left: 0px;
+    padding-bottom: 10px;
+  }
+
   .postActions {
     flex-direction: row;
-    justify-content: space-between;
-    margin: 0rem 1rem 1rem 1.2rem;
-    gap: 0px;
+    justify-content: center;
+    margin: 0.5rem 1rem 0rem -0.3rem;
+    gap: 5.5rem;
+    gap:.8rem;
+    /* background-color: aqua; */
+    width: 100%;
   }
 
   

@@ -21,6 +21,14 @@
 
 }
 
+.feedHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  /* background-color: lightcoral; */
+}
+
 .feedTitle {
   color: #fff;
   font: 500 32px Poppins, sans-serif;
@@ -37,4 +45,49 @@
   .feedTitle {
     max-width: 100%;
   }
+}
+
+.searchBar {
+  align-self: start;
+  display: flex;
+  gap: 6px;
+  width: 350px;
+  justify-content: right;
+  font-size: 28px;
+  margin-right: 25px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  /* background-color: darkcyan; */
+}
+
+.searchBar img {
+  aspect-ratio: 1.05;
+  object-fit: auto;
+  object-position: center;
+  width: 30px;
+  margin-bottom: 5px;
+}
+
+.searchBar input {
+  background-color: transparent; /* Transparent before selecting */
+  border: none;
+  border-bottom: 2px solid transparent; /* Transparent bottom border before selecting */
+  border-radius: 10px 10px 0 0; /* Rounded corners */
+  color: rgba(255, 255, 255, 1);
+  font-size: 22px;
+  font-weight: 400;
+  height: 38px;
+  padding: 0 0;
+  width: 55%;
+  transition: background-color 0.3s ease, border-bottom-color 0.3s ease; /* Smooth transition for background and border */
+}
+
+.searchBar input::placeholder {
+  color: rgba(255, 255, 255, 0.5); /* Light gray placeholder */
+}
+
+.searchBar input:focus {
+  /* background-color: rgba(255, 255, 255, 0.1); Light background color on focus */
+  border-bottom-color: rgba(255, 255, 255, 1); /* White bottom border on focus */
+  outline: none; /* Remove default outline on focus */
 }
