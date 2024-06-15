@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  Navigate,
 } from "react-router-dom";
 
 // layouts
@@ -31,25 +32,7 @@ function App() {
 
   return (
     <Router>
-    
           <Routes>
-            <Route
-              path="/feed"
-              element={
-                <Suspense fallback={<Loading />}>
-                  <AfterLogin path="/feed" />
-                </Suspense>
-              }
-            />
-
-            <Route
-              path="/community"
-              element={
-                <Suspense fallback={<Loading />}>
-                  <AfterLogin path="/community" />
-                </Suspense>
-              }
-            />
 
             <Route
               path="/"
@@ -59,6 +42,83 @@ function App() {
                 </Suspense>
               }
             />
+
+         
+              <Route
+                path="/feed"
+                element={
+                  <Suspense fallback={<Loading />}>
+                    <AfterLogin path="/feed" />
+                  </Suspense>
+                }
+              />
+
+              <Route
+                path="/feed/*"
+                element={<Navigate to="/feed" replace />}
+              />
+
+              <Route
+                path="/feed/results"
+                element={
+                  <Suspense fallback={<Loading />}>
+                    <AfterLogin path="/feed/results" />
+                  </Suspense>
+                }
+              />
+
+              <Route
+                path="/feed/results/*"
+                element={<Navigate to="/feed/results" replace />}
+              />
+
+              <Route
+                path="/feed/results?search_query=:tagname"
+                element={
+                  <Suspense fallback={<Loading />}>
+                    <AfterLogin path="/feed/results?search_query=:tagname" />
+                  </Suspense>
+                }
+              />
+            
+              <Route
+                path="/community"
+                element={
+                  <Suspense fallback={<Loading />}>
+                    <AfterLogin path="/community" />
+                  </Suspense>
+                }
+              />
+
+              <Route
+                path="/community/*"
+                element={<Navigate to="/community" replace />}
+              />
+
+
+              <Route
+                path="/community/results"
+                element={
+                  <Suspense fallback={<Loading />}>
+                    <AfterLogin path="/community/results" />
+                  </Suspense>
+                }
+              />
+
+              <Route
+                path="/community/results/*"
+                element={<Navigate to="/community/results" replace />}
+              />
+
+              <Route
+                path="/community/results?search_query=:tagname"
+                element={
+                  <Suspense fallback={<Loading />}>
+                    <AfterLogin path="/community/results?search_query=:tagname" />
+                  </Suspense>
+                }
+              />
+  
 
             {/*<Route
               path="/EventCards"
@@ -82,7 +142,7 @@ function App() {
               path="*"
               element={
                 <Suspense fallback={<Loading />}>
-                  <h1>Not Found</h1>
+                  <AfterLogin path="*" />
                 </Suspense>
               }
             />  

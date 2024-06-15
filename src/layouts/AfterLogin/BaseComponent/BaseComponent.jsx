@@ -12,8 +12,20 @@ function BaseComponent(path) {
     case '/community':
       ComponentToRender = <Community />;
       break;
+    case '/feed/results':
+      ComponentToRender = <Feed />;
+      break;
+    case '/community/results':
+      ComponentToRender = <Community />;
+      break;
+    case '/feed/results?search_query=:tagname':
+      ComponentToRender = <Feed />;
+      break;
+    case '/community/results?search_query=:tagname':
+      ComponentToRender = <Community />;
+      break;
     default:
-      ComponentToRender = <Feed />;// or you can handle a not found component here
+      ComponentToRender = <div><h1>Page not Found</h1></div>;// or you can handle a not found component here
   }
 
   return (

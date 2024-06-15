@@ -18,7 +18,7 @@ function ChannelCard({ id, imageUrl, title }) {
 }
 
 ChannelCard.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   imageUrl: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 };

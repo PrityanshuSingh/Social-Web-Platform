@@ -2,22 +2,19 @@
 
 .sidebarContainer {
   justify-content: center;
-  /* background-color: red; */
   display: flex;
   width: 15.86rem;
   height: 100%;
-  font-size: 32px;
   box-sizing: border-box;
   flex-direction: column;
-  font-size: 1rem;
   font-family: Poppins;
   position: relative;
   left: 0;
   transition: left 0.3s ease-in-out;
 }
 
-.sidebarContainer::-webkit-scrollbar{
-  width:0;
+.sidebarContainer::-webkit-scrollbar {
+  width: 0;
 }
 
 .sidebarContainer.open {
@@ -66,7 +63,6 @@
   font: 500 32px Poppins, sans-serif;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-top: 0px;
-  /* background-color: cyan; */
 }
 
 .profileImageContainer {
@@ -88,7 +84,7 @@
 }
 
 .profileImage:hover {
-  transition: .2s linear;
+  transition: 0.2s linear;
   cursor: pointer;
   transform: scale(1.1);
 }
@@ -100,7 +96,6 @@
   letter-spacing: 0.13px;
   margin-top: 10%;
   font-size: 1.2rem;
-  font-family: var(--fontPoppins);
 }
 
 .sidebarMenu {
@@ -115,34 +110,6 @@
   display: flex;
 }
 
-.menuList {
-  display: flex;
-  margin-top: 10%;
-  margin-left: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  list-style: none;
-  font-size: 1rem;
-  padding: 0;
-  gap: 27px;
-}
-
-.menuIcon {
-  aspect-ratio: 1.1;
-  width: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 85%;
-  cursor: pointer;
-  color: #fff;
-}
-
-.menuIcon:hover > svg > * {
-  fill: #ff6347;
-  transition: fill 0.3s ease;
-}
-
 .menuLink {
   font-family: Poppins, sans-serif;
   text-decoration: none;
@@ -155,27 +122,57 @@
   transition: 0.2s linear;
 }
 
-.menuIcon:hover {
+.menuLink.activeLink {
   color: #f1cc8f;
   transition: 0.2s linear;
 }
 
-.menuLink:not(:first-child) {
-  margin-top: 3px;
+.menuList {
+  display: flex;
+  margin-top: 10%;
+  margin-left: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style: none;
+  font-size: 1.1rem;
+  padding: 0;
+  font-weight: 500;
+  gap: 27px;
 }
 
-/* Bottom Navbar Styles */
+.menuIcon {
+  aspect-ratio: 1.1;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 95%;
+  cursor: pointer;
+  color: #fff;
+}
+
+.menuIcon:hover,
+.menuIcon.activeIcon {
+  color: #f1cc8f;
+  transition: 0.2s linear;
+}
+
+.menublock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .bottomNavbar {
   display: none;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #1A1D2E;
+  background-color: #1a1d2e;
   padding: 1rem;
   justify-content: space-around;
   align-items: center;
-  z-index: 999;
+  z-index: 9;
 }
 
 .bottomNavbarIcon {
@@ -184,6 +181,13 @@
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
+  color: #fff;
+}
+
+.bottomNavbarIcon:hover
+.bottomNavbarIcon.activeIcon {
+  color: #f1cc8f;
+  transition: 0.2s linear;
 }
 
 .bottomNavbarIcon img {
@@ -191,24 +195,19 @@
   height: 24px;
 }
 
-/* Media Queries */
-
-@media screen and (min-width: 1536px) {    /* For Desktop monitors*/ 
-  .sidebarContainer{
+@media screen and (min-width: 1536px) {
+  .sidebarContainer {
     width: 15.4vw;
   }
-
 }
 
-@media screen and (max-width: 1360px) {    /* For Desktop monitors*/ 
-  .sidebarContainer{
+@media screen and (max-width: 1360px) {
+  .sidebarContainer {
     width: 18.3vw;
   }
 }
 
-
-
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1080px) {
   .sidebarContainer {
     max-width: 8rem;
     width: 6.78rem;
@@ -243,7 +242,6 @@
   }
 }
 
-
 @media screen and (max-width: 786px) {
   .sidebarContainer {
     display: none;
@@ -253,4 +251,3 @@
     display: flex;
   }
 }
-

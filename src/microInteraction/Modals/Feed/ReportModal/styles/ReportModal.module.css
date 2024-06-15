@@ -1,0 +1,62 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 30;
+}
+
+.modalContent {
+  border: 1px solid #fff;
+  width: 500px;
+  background-color: #151313;
+  opacity: 0.9;
+  border-radius: 15px;
+  padding: 24px; /* Equivalent to p-lg-4 */
+}
+
+.exitIcon {
+  text-align: end;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.modalTitle {
+  color: #6821c3;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 28px;
+}
+
+.modalText {
+  text-align: justify;
+  margin-top: 24px; /* Equivalent to mt-lg-3 */
+}
+
+.modalButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px; /* Equivalent to mt-lg-3 */
+}
+
+.cancelButton, .confirmButton {
+  border: 1px solid #6821c3;
+  padding: 6px;
+  width: 8rem;
+  color: white;
+  border-radius: 7px;
+  margin-left: 8px; /* Space between buttons */
+}
+
+.cancelButton {
+  background-color: #999;
+}
+
+.confirmButton {
+  background-color: #6821c3;
+}
